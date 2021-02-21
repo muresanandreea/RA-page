@@ -34,13 +34,12 @@ export const ButtonWrapper = styled.div`
   opacity:1;
   align-items:center;
   justify-content: center;
-  border:1px solid #070809;
+  border-bottom:1px solid #070809;
   cursor:pointer;
   margin:0 10px;
-  border-radius:15px;
   :hover{
     background-color:#070809;
-    border:1px solid #acdbdf;
+    border-bottom:1px solid #acdbdf;
     transition: all 0.3s ease 0s;
   }
 `;
@@ -53,7 +52,7 @@ export const RequestButtonWrapper = styled.div`
   background-color:#acdbdf;
   cursor:pointer;
   border-radius:15px;
-  margin-left:32px;
+  margin-left:10rem;
   opacity:1;
   >div {
     color:#070809;

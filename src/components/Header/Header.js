@@ -8,14 +8,15 @@ export const Header = (props) => {
     return (
         <Wrapper>
             <LogoWrapper>eBooster</LogoWrapper>
-            <div style={{display:'flex',justifyContent:'flex-end', flex:'0.5s', marginRight:'8px'}}>
-            <ButtonWrapper><ButtonText>Services</ButtonText></ButtonWrapper>
-            <ButtonWrapper><ButtonText>Portofolio</ButtonText></ButtonWrapper>
-            <ButtonWrapper><ButtonText>About us</ButtonText></ButtonWrapper>
-            <RequestButtonWrapper><ButtonText style={{fontWeight:'700'}}>Request for quotation</ButtonText></RequestButtonWrapper>
+                <div style={{display:'flex',justifyContent:'center', flex:'1', marginRight:'20px'}}>
+                    <ButtonWrapper><ButtonText>Services</ButtonText></ButtonWrapper>
+                    <ButtonWrapper><ButtonText>Portofolio</ButtonText></ButtonWrapper>
+                    <ButtonWrapper><ButtonText>About us</ButtonText></ButtonWrapper>
+                    <RequestButtonWrapper><ButtonText style={{fontWeight:'700'}}>Request for quotation</ButtonText></RequestButtonWrapper>
+                </div>
             <SideMenuButtonWrapper  onClick={()=>setSidemenuIsOpen(!sidemenuIsOpen)}>
                 <i className="fas fa-bars" color={'#acdbdf'}></i>
-            </SideMenuButtonWrapper></div>
+            </SideMenuButtonWrapper>
         </Wrapper>
     )
 }
