@@ -8,7 +8,7 @@ export const Header = (props) => {
     return (
         <Wrapper>
             <LogoWrapper>eBooster</LogoWrapper>
-                <div style={{display:'flex',justifyContent:'center', flex:'1', marginRight:'20px'}}>
+                <div style={{display:'flex',justifyContent:'flex-end', flex:'1', marginRight:'20px'}}>
                     <ButtonWrapper><ButtonText>Services</ButtonText></ButtonWrapper>
                     <ButtonWrapper><ButtonText>Portofolio</ButtonText></ButtonWrapper>
                     <ButtonWrapper><ButtonText>About us</ButtonText></ButtonWrapper>
