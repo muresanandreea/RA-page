@@ -8,7 +8,7 @@ export const Header = (props) => {
     console.log(sidemenuIsOpen,'here');
     return (
         <Wrapper>
-            <LogoWrapper>UXtaposed</LogoWrapper>
+            <LogoWrapper/>
                 <div style={{display:'flex',justifyContent:'flex-end', flex:'1', marginRight:'4%'}}>
                     <ButtonWrapper><ButtonText>Services</ButtonText></ButtonWrapper>
                     <ButtonWrapper><ButtonText>Portofolio</ButtonText></ButtonWrapper>

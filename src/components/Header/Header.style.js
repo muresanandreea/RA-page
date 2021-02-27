@@ -1,5 +1,5 @@
 import styled, {keyframes} from 'styled-components';
-//import Logo from '../../assets/uxtaposed.jpeg';
+import Logo from '../../assets/logo.svg';
 
 
 const nohover = keyframes`
@@ -50,12 +50,12 @@ export const Wrapper= styled.div`
 `;
 
 export const LogoWrapper= styled.div`
-  width:178px;
-  height: 25px;
+  background-image:url(${Logo});
+  background-repeat: no-repeat;
+  width:100%;
+  height: 90%;
   transition: all 0.3s ease 0s;
-  font-size: 25px;
-  color:#69779b;
-  opacity:1;
+  margin-left: 2%;
 `;
 
 export const SideMenuButtonWrapper= styled.div`
