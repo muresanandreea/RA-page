@@ -52,7 +52,7 @@ export const Wrapper= styled.div`
 export const LogoWrapper= styled.div`
   background-image:url(${Logo});
   background-repeat: no-repeat;
-  width:100%;
+  width:412px;
   height: 90%;
   transition: all 0.3s ease 0s;
   margin-left: 2%;
