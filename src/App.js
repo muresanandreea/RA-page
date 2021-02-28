@@ -2,6 +2,7 @@ import './App.css';
 import {Header} from "./components/Header/Header";
 import {MidSection} from "./components/MidSection/MidSection";
 import {Hero} from './components/Hero/Hero';
+import {Footer} from './components/Footer/Footer';
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
         <Header/>
         <Hero/>
         <MidSection/>
+        <Footer/>
         </div>
     </div>
   );
