@@ -1,6 +1,6 @@
 import React from 'react';
 import {MidSectionWrapper,DesignSection,DesignImage,SectionText,
-    DevSection,DevImage,DevText} from './MidSection.style';
+    DevSection,DevImage} from './MidSection.style';
 
 export const MidSection = () => {
 

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const FooterWrapper = styled.div`
-  bottom:0;
   display:flex;
   flex-direction:column;
   width: 100%;
