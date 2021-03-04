@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {SideMenuWrapper,LogoWrapper,SideMenuButtonWrapper} from '../Header/Header.style';
+import {SideMenuWrapper,LogoWrapper,SideMenuButtonWrapper} from '../../components/Header/Header.style';
 
 export const SideMenu = () => {
 

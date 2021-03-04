@@ -3,8 +3,10 @@ import {PortofolioSectionWrapper, PortofolioSectionTitle, PortofolioBoxesWrapper
     PortofolioLogoBox,PortofolioLogoDescription,PortofolioLogoImage,
     PortofolioWebBox,PortofolioWebDescription,PortofolioWebImage,
     PortofolioMobileBox,PortofolioMobileDescription,PortofolioMobileImage} from './PortofolioSection.style';
+import {ActionButton} from '../../components/utils/ButtonComponent';
 
-export const PortofolioSection = () => {
+export const PortofolioSection = (props) => {
+    const {text}=props;
 
     return (
         <PortofolioSectionWrapper>

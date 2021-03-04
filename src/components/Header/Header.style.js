@@ -49,13 +49,14 @@ export const Wrapper= styled.div`
   justify-content: space-between;
 `;
 
-export const LogoWrapper= styled.div`
+export const LogoWrapper= styled.a`
   background-image:url(${Logo});
   background-repeat: no-repeat;
   width:412px;
   height: 90%;
   transition: all 0.3s ease 0s;
   margin-left: 2%;
+  text-decoration: none;
 `;
 
 export const SideMenuButtonWrapper= styled.div`
@@ -65,13 +66,14 @@ export const SideMenuButtonWrapper= styled.div`
   display: none;
 `;
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.a`
   display:flex;
   opacity:1;
   align-items:center;
   justify-content: center;
   cursor:pointer;
   margin:0 10px;
+  text-decoration: none;
 `;
 
 export const RequestButtonWrapper = styled.div`
