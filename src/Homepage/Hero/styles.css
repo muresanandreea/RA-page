@@ -13,11 +13,13 @@ section.slideshow section.current-slide{
     width: 400px;
     height: 400px;
     margin: auto 10px;
+    transition: all 0.3s ease 0s;
 }
 section.slideshow section.previous-slide,
 section.slideshow section.next-slide{
     width: 220px;
     height: 260px;
+    transition: all 0.3s ease 0s;
 }
 section.slideshow section.slide div.slide-thumbnail{
     width: 100%;
@@ -27,6 +29,7 @@ section.slideshow section.slide div.slide-thumbnail{
     background-position: center;
     border-radius: 6px;
     box-shadow: #8DA092 0px 0px 9px 0px;
+    transition: all 0.3s ease 0s;
 }
 
 section.slideshow div.slideshow-controller{
@@ -50,6 +53,7 @@ section.slideshow div.slideshow-controller span{
 section.slideshow div.slideshow-controller span:hover{
     color: #8DA092;
     bakground-color:#8DA092;
+    transition: all 0.2s;
 }
 section.slideshow div.slideshow-controller span:active{
     color: #8DA092;
