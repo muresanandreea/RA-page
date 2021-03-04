@@ -47,10 +47,11 @@ export const PortofolioLogoBox = styled.div`
     cursor:pointer;
     justify-content: center;
     align-items: center;
-  padding: 8px 0;
+  padding: 20px;
   transition: all 0.2s;
   :hover{
     transform: translate(0,-8px);
+    box-shadow:#8DA092 0px 0px 9px 0px;
   }
 `;
 
@@ -75,10 +76,11 @@ export const PortofolioWebBox = styled.div`
   cursor:pointer;
   justify-content: center;
   align-items: center;
-  padding: 8px 0;
+  padding: 20px;
   transition: all 0.2s;
   :hover{
     transform: translate(0,-8px);
+    box-shadow:#8DA092 0px 0px 9px 0px;
   }
 `;
 
@@ -103,10 +105,11 @@ export const PortofolioMobileBox = styled.div`
   cursor:pointer;
   justify-content: center;
   align-items: center;
-  padding: 8px 0;
+  padding: 20px;
   transition: all 0.2s;
   :hover{
     transform: translate(0,-8px);
+    box-shadow:#8DA092 0px 0px 9px 0px;
   }
 `;
 
@@ -120,4 +123,21 @@ export const PortofolioMobileImage = styled.div`
   height: 146px;
   width: 104px;
   background-size: contain;
+`;
+
+export const SeeMoreButton = styled.div`
+  background-color:#ECC091;
+  :hover{
+    background-color:#8DA092;
+    color:#8DA092;
+    box-shadow: rgb(0 0 0 /37%) 0px 0px 9px 0px;;
+  }
+`;
+
+export const SeeMoreText = styled.div`
+  font-family: Helvetica-Regular;
+  font-size:16px;
+  padding: 4px 8px;
+  font-weight: 700;
+  color:#171616;
 `;

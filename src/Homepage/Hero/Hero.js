@@ -1,11 +1,11 @@
 import React from 'react';
-import {HeroWrapper} from './Hero.style';
 
-export const Hero = () => {
+import './styles.css';
 
+export default function Slideshow(){
     return (
-        <HeroWrapper>
-
-        </HeroWrapper>
-    );
+        <section className="slideshow">
+            Slideshow
+        </section>
+    )
 }

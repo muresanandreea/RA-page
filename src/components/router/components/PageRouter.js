@@ -11,13 +11,13 @@ export const PageRouter = memo(props => {
             <Route exact path="/">
                 <Homepage/>
             </Route>
-            <Route exact path="/about">
+            <Route path="/about">
                 <About/>
             </Route>
-            <Route exact path="/portfolio">
+            <Route path="/portfolio">
                 <Portfolio/>
             </Route>
-            <Route exact path="/services">
+            <Route path="/services">
                 <Services/>
             </Route>
         </Switch>
