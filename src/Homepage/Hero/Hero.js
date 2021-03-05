@@ -16,7 +16,7 @@ const items = [ <img src={Image1} onDragStart={handleDragStart}/>,
 export const Hero = () => {
     return (
         <HeroWrapper>
-            <AliceCarousel mouseTracking items={items} infinite={true} autoPlay={true} autoPlayInterval={1000}
+            <AliceCarousel mouseTracking items={items} infinite={true} autoPlay={true} autoPlayInterval={2000}
                            />
         </HeroWrapper>
     )

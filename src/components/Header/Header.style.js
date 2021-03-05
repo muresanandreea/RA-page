@@ -47,6 +47,7 @@ export const Wrapper= styled.div`
   align-items: center;
   position:fixed;
   justify-content: space-between;
+  z-index:1;
 `;
 
 export const LogoWrapper= styled.a`
