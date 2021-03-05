@@ -1,11 +1,23 @@
 import React from 'react';
+import AliceCarousel from "react-alice-carousel";
+import './alice-carousel.css';
+import {HeroWrapper} from './Hero.style';
+import Image1 from '../../assets/anotherStormTrooper.jpg';
+import Image2 from '../../assets/bobaFett.jpg';
+import Image3 from '../../assets/stormTrooper.jpg';
 
-import './styles.css';
+const handleDragStart = e => e.preventDefault();
 
-export default function Slideshow(){
+const items = [ <img src={Image1} onDragStart={handleDragStart}/>,
+    <img src={Image2} onDragStart={handleDragStart}/>,
+    <img src={Image3} onDragStart={handleDragStart}/>
+];
+
+export const Hero = () => {
     return (
-        <section className="slideshow">
-            Slideshow
-        </section>
+        <HeroWrapper>
+            <AliceCarousel mouseTracking items={items} infinite={true} autoPlay={true} autoPlayInterval={1000}
+                           />
+        </HeroWrapper>
     )
 }

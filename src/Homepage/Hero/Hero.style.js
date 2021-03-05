@@ -5,5 +5,6 @@ export const HeroWrapper = styled.div`
   justify-content: space-around;
   width: 100%;
   height: 52vh;
-  background-color:purple;
+  margin-top: 112px;
+  margin-bottom:70px;
 `;
