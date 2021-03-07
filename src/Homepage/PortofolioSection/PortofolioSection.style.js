@@ -21,7 +21,7 @@ export const PortofolioSectionWrapper = styled.div`
   width: 100%;
   height: 56vh;
   background-color:#171616;
-  padding: 20px 0;
+  padding: 20px 0 80px 0;
 `;
 
 export const PortofolioSectionTitle = styled.div`

@@ -1,7 +1,6 @@
 section.slideshow{
     width: 100%;
-    margin-top: 17vh;
-    height: 50vh;
+    height: 60vh;
 }
 section.slideshow div.slide-holder{
     display: flex;

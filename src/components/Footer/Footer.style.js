@@ -20,23 +20,42 @@ export const ContentWrapper = styled.div`
   
 `;
 
-export const Icon = styled.div`
+export const Icon = styled.a`
+  cursor:pointer;
   padding:10px;
+  height: 15.5px;
+  width: 14px;
 .fa-linkedin-in{
   color:#ECC091;
   font-size:16px;
+  :hover{
+    color:#fff
+  }
 };
   .fa-instagram{
     color:#ECC091;
     font-size:16px;
+    :hover{
+      color:#fff;
+      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+      border-radius:4px;
+    }
   };
   .fa-twitter{
     color:#ECC091;
     font-size:16px;
+    :hover{
+      color:#1DA1F2;
+    }
   };
   .fa-facebook-f{
     color:#ECC091;
     font-size:16px;
+    height: 15.5px;
+    width: 14px;
+    :hover{
+      color:#4267B2;
+    }
   }
 `;
 
