@@ -95,12 +95,9 @@ export const RequestButtonWrapper = styled.div`
     bottom:0;
     border-radius: 5px;
     transform: scaleX(0);
-    animation: 1s forwards ${nohover} linear;
-    animation-fill-mode: forwards;
     z-index: -1;
   }
-  :hover:before,
-  :focus:before {
+  :hover:before {
     animation: .5s forwards ${hover} linear;
     animation-fill-mode: forwards;
   }

@@ -7,6 +7,18 @@ import {headerLinks} from "./constants";
 export const Header = (props) => {
     const [contactUsModal, setContactUsModal] = useState(false);
     console.log(contactUsModal,'here');
+    let handleClick = e => {
+        e.preventDefault();  //  <------ Here is the magic;
+    };
+
+    const RequestModal = () => {
+        return (
+            <RequestButtonWrapper onClick = {handleClick}>
+                <RequestButtonText style={{fontWeight:'700'}}>Request for quotation</RequestButtonText>
+            </RequestButtonWrapper>
+        )
+    }
+
     return (
         <Wrapper>
             <ContactUsModal showModal={contactUsModal}
@@ -16,9 +28,7 @@ export const Header = (props) => {
                     <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.portfolio}><ButtonText>Portofolio</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
-                    <RequestButtonWrapper onClick = {()=>setContactUsModal(true)}>
-                        <RequestButtonText style={{fontWeight:'700'}}>Request for quotation</RequestButtonText>
-                    </RequestButtonWrapper>
+                    <RequestModal/>
                 </div>
   {/*          <SideMenuButtonWrapper  onClick={()=>setSidemenuIsOpen(!sidemenuIsOpen)}>
                 <i className="fas fa-bars" color={'#acdbdf'}></i>
