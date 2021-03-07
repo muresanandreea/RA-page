@@ -3,16 +3,19 @@ import LogoImage from '../../assets/stormTrooper.jpg';
 import WebImage from '../../assets/bobaFett.jpg';
 import MobileImage from '../../assets/anotherStormTrooper.jpg';
 
-const boxHover = keyframes`
+const seeMoreAnimation = keyframes`
 0%{
-  opacity:0;
-  transform: translateY(20px);
+  transform:translateX(4px);
 }
-  100%{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-`
+50% {
+  transform:translateX(8px);
+}
+100%{
+  transform:translateX(4px);
+}
+`;
+
+
 
 export const PortofolioSectionWrapper = styled.div`
   display:flex;
@@ -127,10 +130,20 @@ export const PortofolioMobileImage = styled.div`
 
 export const SeeMoreButton = styled.div`
   background-color:#ECC091;
+  width: 108px;
+  display:flex;
+  align-items:center;
+  border-radius:8px;
+  justify-content:center;
   :hover{
     background-color:#8DA092;
     color:#8DA092;
-    box-shadow: rgb(0 0 0 /37%) 0px 0px 9px 0px;;
+    box-shadow: rgb(0 0 0 /37%) 0px 0px 9px 0px;
+    >div {
+      animation: ${seeMoreAnimation} 1s infinite;
+    }
+    
+    
   }
 `;
 
@@ -140,4 +153,7 @@ export const SeeMoreText = styled.div`
   padding: 4px 8px;
   font-weight: 700;
   color:#171616;
+  >i{
+    padding-left: 4px;
+  }
 `;
