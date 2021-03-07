@@ -131,6 +131,7 @@ export const PortofolioMobileImage = styled.div`
 export const SeeMoreButton = styled.div`
   background-color:#ECC091;
   width: 108px;
+  height: 24px;
   display:flex;
   align-items:center;
   border-radius:8px;
@@ -142,18 +143,22 @@ export const SeeMoreButton = styled.div`
     >div {
       animation: ${seeMoreAnimation} 1s infinite;
     }
-    
-    
   }
 `;
 
+export const Icon = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+`;
+
 export const SeeMoreText = styled.div`
-  font-family: Helvetica-Regular;
+  font-family: Helvetica-Bold;
+  height: 100%;
   font-size:16px;
-  padding: 4px 8px;
   font-weight: 700;
   color:#171616;
-  >i{
-    padding-left: 4px;
-  }
+  display: flex;
+  align-items: center;
 `;
