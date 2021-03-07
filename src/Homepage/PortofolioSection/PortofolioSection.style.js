@@ -2,6 +2,7 @@ import styled,{keyframes} from 'styled-components';
 import LogoImage from '../../assets/stormTrooper.jpg';
 import WebImage from '../../assets/bobaFett.jpg';
 import MobileImage from '../../assets/anotherStormTrooper.jpg';
+import ArrowLeft from '../../assets/arrowRight.svg';
 
 const seeMoreAnimation = keyframes`
 0%{
