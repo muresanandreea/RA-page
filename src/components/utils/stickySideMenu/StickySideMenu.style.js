@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const SideMenuWrapper = styled.div`
   position: sticky;
-  top: 0;
+  top: 24%;
   width: 300px;
   height: 273px;
   margin-top: 4%;

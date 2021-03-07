@@ -1,6 +1,5 @@
 import React from "react";
-import {PortfolioWrapper} from './Portofolio.style';
-import {StickySideMenu} from "../components/utils/stickySideMenu/StickySideMenuComponent";
+import {PortfolioWrapper,SideWrapper} from './Portofolio.style';
 import {
     ButtonText, ButtonWrapper,
     ButtonWrapperCurrent,
@@ -14,15 +13,16 @@ export const Portfolio = () => {
 
     return (
         <PortfolioWrapper>
-            <SideMenuWrapper>
-                <Divider/>
-                <SideMenuSections>
-                    <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
-                    <ButtonWrapperCurrent href={headerLinks.portfolio}><ButtonText>Portfolio</ButtonText></ButtonWrapperCurrent>
-                    <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
-                    <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>Contact us</ButtonText></ButtonWrapper>
-                </SideMenuSections>
-            </SideMenuWrapper>
+                <SideMenuWrapper>
+                    <Divider/>
+                    <SideMenuSections>
+                        <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
+                        <ButtonWrapperCurrent href={headerLinks.portfolio}><ButtonText>Portfolio</ButtonText></ButtonWrapperCurrent>
+                        <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
+                        <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>Contact us</ButtonText></ButtonWrapper>
+                    </SideMenuSections>
+                </SideMenuWrapper>
+
         </PortfolioWrapper>
     )
 }

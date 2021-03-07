@@ -6,6 +6,6 @@ export const BaseWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  background-color: aquamarine;
   display: flex;
+  margin-top:112px;
 `;
