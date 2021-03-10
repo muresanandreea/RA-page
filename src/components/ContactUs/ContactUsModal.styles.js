@@ -1,4 +1,5 @@
 import styled,{keyframes} from 'styled-components';
+import Logo from '../../assets/contactUsLogo.svg';
 
 const showBackDrop = keyframes`
   0%{
@@ -53,24 +54,24 @@ export const Backdrop = styled.div`
 
 export const Modal = styled.div`
   z-index:500;
-  background-color: white;
+  background: radial-gradient(circle at 30% 107%, #7DA487 0%, #7DA487 5%, #8DA092 45%,#7DA487 60%,#8DA092 90%);
   box-sizing: border-box;
   animation: ${props => (props.showBackdrop ? openModal : closeModal)} 0.4s
   ${props => (props.showBackdrop ? 'ease-in' : 'ease-out')};
   display: flex;
   justify-content: center;
   position: relative;
-  width: 345px;
+  width: 40vw;
+  height: 60vh;
+  min-width: 340px;
   border-radius: 8px;
 `;
 
 export const ModalContentWrapper = styled.div`
   width: 100%;
-  padding: 25px 28px 28px 20px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 `;
 
 export const ContactUsButton = styled.div`
@@ -87,4 +88,46 @@ export const ContactUsButton = styled.div`
   font-size:18px;
   margin-top: 33px;
   cursor:pointer;
+`;
+
+export const FormContact = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-bottom: 20px;
+  align-items: flex-start;
+`;
+
+
+export const LogoWrapper = styled.div`
+  background-image: url(${Logo});
+  width: 228px;
+  height: 141px;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+  padding-right: 24px;
+`;
+
+
+export const ContactUsFormWrapper = styled.div`
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const Title = styled.h2`
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  cursor:default;
+`;
+
+export const InputWrapper = styled.div`
+  padding-top:20px;
 `;

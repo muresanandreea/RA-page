@@ -137,6 +137,7 @@ export const SeeMoreButton = styled.div`
   align-items:center;
   border-radius:8px;
   justify-content:center;
+  cursor:pointer;
   :hover{
     background-color:#8DA092;
     color:#8DA092;

@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
-//import ContactUs from './ContactUs';
-import {Backdrop, Modal, ModalContentWrapper,ContactUsButton} from './ContactUsModal.styles.js';
+import ContactUsForm from './ContactUsForm';
+import {Backdrop, Modal, ModalContentWrapper,LogoWrapper} from './ContactUsModal.styles.js';
 
 export const ContactUsModal = ({text, showModal, closeModal}) => {
     const [shouldRender, setShouldRender] = useState(showModal);
@@ -24,9 +24,8 @@ export const ContactUsModal = ({text, showModal, closeModal}) => {
                 <Backdrop showBackdrop={showModal}>
                     <Modal showModal={showModal} onAnimatedEnd={onAnimationEnd}>
                         <ModalContentWrapper>
-                            {/*<ContactUs text={text}/>*/}
-                            <ContactUsButton onClick={closeModal}>X
-                            </ContactUsButton>
+                            <ContactUsForm showModal={showModal}/>
+                            <LogoWrapper/>
                         </ModalContentWrapper>
                     </Modal>
                 </Backdrop>

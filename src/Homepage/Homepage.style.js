@@ -1,8 +1,68 @@
-import styled from 'styled-components';
+import styled,{keyframes} from 'styled-components';
+import Laptop from '../assets/macbook.svg';
+
+const rotation = keyframes`
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+`;
 
 export const HomepageWrapper = styled.div`
   display:flex;
   flex-direction: column;
   width: 100%;
+  height:67.5vh;
   background-color:#171616;
+`;
+
+export const UnderConstructionwrapper = styled.div`
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+`;
+
+export const LaptopWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:48%;
+  min-height: 248px;
+`;
+
+export const LaptopImg = styled.div`
+  background-image: url(${Laptop});
+  background-repeat: no-repeat;
+  width: 308px;
+  height: 268px;
+  position: absolute;
+  `;
+
+export const IconWrapper = styled.div`
+  height: 50%;
+.fa-cog{
+  font-size:60px;
+  color:#ECC091;
+  animation: ${rotation} 2s infinite linear;
+  margin-bottom: 32px;
+}
+`;
+
+export const UnderConstructionText = styled.div`
+  color:#ECC091;
+  font-family: Arvo-Regular;
+  font-size:48px;
+  //font-weight: 700;
+`;
+
+export const UnderConstructionTextSocial = styled.div`
+  color:#ECC091;
+  font-family: Arvo-Regular;
+  font-size:38px
 `;

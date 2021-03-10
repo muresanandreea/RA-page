@@ -5,31 +5,21 @@ import {ContactUsModal} from "../ContactUs/ContactUsModal";
 import {headerLinks} from "./constants";
 
 export const Header = (props) => {
-    const [contactUsModal, setContactUsModal] = useState(false);
-    console.log(contactUsModal,'here');
-    let handleClick = e => {
-        e.preventDefault();  //  <------ Here is the magic;
-    };
-
-    const RequestModal = () => {
-        return (
-            <RequestButtonWrapper onClick = {handleClick}>
-                <RequestButtonText style={{fontWeight:'700'}}>Request for quotation</RequestButtonText>
-            </RequestButtonWrapper>
-        )
-    }
+/*    const [contactUsModal, setContactUsModal] = useState(false);*/
 
     return (
         <Wrapper>
-            <ContactUsModal showModal={contactUsModal}
-                            closeModal={(!contactUsModal)}/>
+{/*            <ContactUsModal showModal={contactUsModal}
+                            closeModal={(!contactUsModal)}/>*/}
             <LogoWrapper href={headerLinks.homepage}/>
-                <div style={{display:'flex',justifyContent:'flex-end', flex:'1', marginRight:'4%'}}>
+{/*                <div style={{display:'flex',justifyContent:'flex-end', flex:'1', marginRight:'4%'}}>
                     <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.portfolio}><ButtonText>Portofolio</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
-                    <RequestModal/>
-                </div>
+                    <RequestButtonWrapper onClick = {()=>{setContactUsModal(!contactUsModal)}}>
+                        <RequestButtonText style={{fontWeight:'700'}}>Request for quotation</RequestButtonText>
+                    </RequestButtonWrapper>
+                </div>*/}
   {/*          <SideMenuButtonWrapper  onClick={()=>setSidemenuIsOpen(!sidemenuIsOpen)}>
                 <i className="fas fa-bars" color={'#acdbdf'}></i>
             </SideMenuButtonWrapper>*/}
