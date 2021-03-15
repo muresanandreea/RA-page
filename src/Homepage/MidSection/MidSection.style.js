@@ -5,7 +5,7 @@ export const MidSectionWrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   height: 40vh;
-  background-color:#171616;
+  background-color:#ECE8E4;
   padding: 20px 0;
 `;
 

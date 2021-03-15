@@ -8,7 +8,7 @@ export const SideMenuWrapper = styled.div`
   margin-top: 4%;
   margin-left: 4%;
   display: flex;
-  background-color: #171616;
+  background-color: #E1E0DF;
 `;
 
 export const SideMenuSections = styled.div`

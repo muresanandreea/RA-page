@@ -1,26 +1,26 @@
-import React,{useEffect, useState} from 'react';
+import React,{useEffect, useState, useImperativeHandle} from 'react';
 import ContactUsForm from './ContactUsForm';
 import {Backdrop, Modal, ModalContentWrapper,LogoWrapper} from './ContactUsModal.styles.js';
 
-export const ContactUsModal = ({text, showModal, closeModal}) => {
-    const [shouldRender, setShouldRender] = useState(showModal);
+export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}, ref) => {
+    const [isOpen, setIsOpen] = useState(defaultOpened);
     const [contactUsModal, setContactUsModal] = useState(false);
 
     const onAnimationEnd = () => {
         if (!showModal) {
-            setShouldRender(false);
+            setIsOpen(false);
         }
     };
 
     useEffect( () => {
         if (showModal){
-            setShouldRender(true);
+            setIsOpen(true);
         }
     }, [showModal]);
 
     return (
         <>
-            {shouldRender && (
+            {isOpen && (
                 <Backdrop showBackdrop={showModal}>
                     <Modal showModal={showModal} onAnimatedEnd={onAnimationEnd}>
                         <ModalContentWrapper>

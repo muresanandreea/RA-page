@@ -24,12 +24,12 @@ export const PortofolioSectionWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 56vh;
-  background-color:#171616;
+  background-color:#ECE8E4;
   padding: 20px 0 80px 0;
 `;
 
 export const PortofolioSectionTitle = styled.div`
-  color:#ECC091;
+  color:#402E32;
   font-size:25px;
   font-family: Arvo-Bold;
   font-weight: 700;

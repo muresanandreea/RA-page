@@ -13,14 +13,14 @@ export const Homepage = () => {
     return (
         <HomepageWrapper>
             {/*<Hero/>*/}
-{/*            <Slideshow
+            <Slideshow
                 interval={3000}
                 images={[
                     Image1,Image2,Image3
                 ]}/>
             <MidSection/>
-            <PortofolioSection/>*/}
-            <UnderConstructionwrapper>
+            <PortofolioSection/>
+{/*            <UnderConstructionwrapper>
                 <LaptopWrapper>
                     <LaptopImg/>
                     <IconWrapper>
@@ -31,7 +31,7 @@ export const Homepage = () => {
                 <UnderConstructionTextSocial>
                     Meanwhile feel free to interact with our social networks
                 </UnderConstructionTextSocial>
-            </UnderConstructionwrapper>
+            </UnderConstructionwrapper>*/}
         </HomepageWrapper>
     )
 }

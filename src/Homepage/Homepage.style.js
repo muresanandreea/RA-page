@@ -1,5 +1,6 @@
 import styled,{keyframes} from 'styled-components';
 import Laptop from '../assets/macbook.svg';
+import { media } from '../components/utils/stylesVariables';
 
 const rotation = keyframes`
     from {
@@ -14,7 +15,6 @@ export const HomepageWrapper = styled.div`
   display:flex;
   flex-direction: column;
   width: 100%;
-  height:67.5vh;
   background-color:#171616;
 `;
 
@@ -42,6 +42,9 @@ export const LaptopImg = styled.div`
   width: 308px;
   height: 268px;
   position: absolute;
+  ${media.mobileAndTablet}{
+    width: 260px;
+  }
   `;
 
 export const IconWrapper = styled.div`
@@ -51,7 +54,10 @@ export const IconWrapper = styled.div`
   color:#ECC091;
   animation: ${rotation} 2s infinite linear;
   margin-bottom: 32px;
-}
+};
+  ${media.mobileAndTablet}{
+    height: 60%;
+  }
 `;
 
 export const UnderConstructionText = styled.div`
@@ -64,5 +70,8 @@ export const UnderConstructionText = styled.div`
 export const UnderConstructionTextSocial = styled.div`
   color:#ECC091;
   font-family: Arvo-Regular;
-  font-size:38px
+  font-size:38px;
+  ${media.mobileAndTablet}{
+    font-size: 18px;
+  }
 `;

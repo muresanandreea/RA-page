@@ -1,6 +1,7 @@
 section.slideshow{
     width: 100%;
     height: 60vh;
+    background-color:#ECE8E4;
 }
 section.slideshow div.slide-holder{
     display: flex;
