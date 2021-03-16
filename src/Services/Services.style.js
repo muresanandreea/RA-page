@@ -1,10 +1,17 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import React from "react";
+
+
+const bounce = keyframes`
+    0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-5px)
+    `;
 
 export const ServicesWrapper = styled.div`
   display:flex;
   width: 100%;
   height:100%;
+  min-height: 100vh;
   background-color: #E1E0DF;
 `;
 
@@ -15,6 +22,7 @@ export const ServicesTableWrapper = styled.div`
   width: 100%;
   align-items: center;
   padding: 20px;
+  margin-bottom: 191px;
 `;
 
 export const WebsiteSection = styled.div`
@@ -62,6 +70,9 @@ export const TableTitle = styled.div`
     margin-left:8px;
     transition-timing-function: ease-in;
     transition: 0.2s;
+  }
+  :hover {
+    animation: ${bounce} 2s infinite linear;
   }
 `;
 

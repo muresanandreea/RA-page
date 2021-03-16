@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const BaseWrapper = styled.div`
   position:relative;
   height:100%;
+min-height: 100vh;
 `;
 
 export const ContentWrapper = styled.div`
