@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {ServicesWrapper, ServicesTableWrapper, WebsiteSection,TableTitle,
+import {ServicesWrapper, ServicesTableWrapper, WebsiteSection,TableTitle,Title,
     SocialMediaSection, PrintWrapper, WebsiteTitle, SocialMediaTitle, PrintTitle} from './Services.style';
 import {StickySideMenu} from "../components/utils/stickySideMenu/StickySideMenuComponent";
 import {WebsiteSectionContent} from "./WebsiteSection";
@@ -14,6 +14,7 @@ export const Services = () => {
         <ServicesWrapper>
             <StickySideMenu/>
             <ServicesTableWrapper>
+                <Title><h3>What can we do?</h3></Title>
                 <WebsiteSection>
                     <TableTitle onClick={()=>setIsCollapsedWeb(!isCollapsedWeb)} isCollapsed={isCollapsedWeb}>
                         <i className="fas fa-caret-right"/>

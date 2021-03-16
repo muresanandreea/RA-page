@@ -70,3 +70,16 @@ export const SocialMediacontentWrapper = styled.div`
   flex-direction: column;
   margin: 4px 0 4px 0;
 `;
+
+export const Title = styled.div`
+    font-size:36px;
+    font-weight: 700;
+  h3 {
+    font-size: 72px;
+    background: linear-gradient(
+            45deg
+            ,#402E32,#8DA092);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
