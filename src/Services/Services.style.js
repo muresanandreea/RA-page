@@ -78,7 +78,7 @@ export const Title = styled.div`
     font-size: 72px;
     background: linear-gradient(
             45deg
-            ,#402E32,#8DA092);
+            ,#402E32,#ECC091);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
