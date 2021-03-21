@@ -77,13 +77,14 @@ export const Title = styled.div`
 `;
 
 export const OurPortfolio = styled.div`
-  background: linear-gradient(to bottom, #b0003a 0%, #ece8e4 100%);
+  background: linear-gradient(to bottom, #171616 0%, #ece8e4 100%);
   height:4%;
   min-height:240px;
   width:100%;
 `;
 
 export const OurPortfolioTitle = styled.div`
+  margin-left:4%;
     width: 446px;
     font-size: 72px;
     background: linear-gradient(
