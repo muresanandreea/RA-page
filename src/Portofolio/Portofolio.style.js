@@ -95,3 +95,9 @@ export const OurPortfolioTitle = styled.div`
     animation-delay: 0s;
     animation: ${shimmerBackground} 8s linear infinite;
 `;
+
+export const Wrapper = styled.div`
+    display: flex;
+  flex-direction: column;
+  width: 100%;
+`;

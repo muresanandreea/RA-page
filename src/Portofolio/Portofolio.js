@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper,TitleWrapper,Title,
-    OurPortfolio, OurPortfolioTitle} from './Portofolio.style';
+    OurPortfolio, OurPortfolioTitle, Wrapper} from './Portofolio.style';
 import {
     ButtonText, ButtonWrapper,
     ButtonWrapperCurrent,
@@ -29,7 +29,7 @@ export const Portfolio = () => {
 
 
     return (
-        <div>
+        <Wrapper>
             <OurPortfolio>
                 <OurPortfolioTitle>Our <b>Portfolio</b></OurPortfolioTitle>
             </OurPortfolio>
@@ -65,6 +65,6 @@ export const Portfolio = () => {
             </PortfolioAssetsWrapper>
             <ContactUsWidget/>
         </PortfolioWrapper>
-        </div>
+        </Wrapper>
     )
 }
