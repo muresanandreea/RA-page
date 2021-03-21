@@ -1,5 +1,6 @@
-import React from "react";
-import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper} from './Portofolio.style';
+import React, {useState} from "react";
+import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper,TitleWrapper,Title,
+    OurPortfolio, OurPortfolioTitle} from './Portofolio.style';
 import {
     ButtonText, ButtonWrapper,
     ButtonWrapperCurrent,
@@ -9,9 +10,10 @@ import {
 } from "../components/utils/stickySideMenu/StickySideMenu.style";
 import {headerLinks} from "../components/Header/constants";
 import {portfolioWeb,portfolioLogo,portfolioMobile} from './portfolioImages';
-import {Title} from "../Services/Services.style";
+import {ContactUsWidget} from "../components/utils/contactUsWidget/ContactUsWidget";
 
 export const Portfolio = () => {
+    const [isLoading, setIsLoading] = useState(false);
 
     const imagesWeb = portfolioWeb.map (e => {
         return <img key={e.image} alt={e.alt} src={e.image} className="img-responsive" />
@@ -27,6 +29,10 @@ export const Portfolio = () => {
 
 
     return (
+        <div>
+            <OurPortfolio>
+                <OurPortfolioTitle>Our <b>Portfolio</b></OurPortfolioTitle>
+            </OurPortfolio>
         <PortfolioWrapper>
                 <SideMenuWrapper>
                     <Divider/>
@@ -38,19 +44,27 @@ export const Portfolio = () => {
                     </SideMenuSections>
                 </SideMenuWrapper>
             <PortfolioAssetsWrapper>
-                <Title><h3>Landing page</h3></Title>
+                <TitleWrapper>
+                    <Title>Our <b>Websites</b></Title>
+                </TitleWrapper>
                 <ImagesWrapper>
                     {imagesWeb}
                 </ImagesWrapper>
-                <Title><h3>Logo</h3></Title>
+                <TitleWrapper>
+                <Title>Our <b>Logos</b></Title>
+                </TitleWrapper>
                 <ImagesWrapper>
                     {imagesLogo}
                 </ImagesWrapper>
-                <Title><h3>Mobile</h3></Title>
+                <TitleWrapper>
+                <Title><b>Mobile</b> responsive</Title>
+                </TitleWrapper>
                 <ImagesWrapper>
                     {imagesMobile}
                 </ImagesWrapper>
             </PortfolioAssetsWrapper>
+            <ContactUsWidget/>
         </PortfolioWrapper>
+        </div>
     )
 }

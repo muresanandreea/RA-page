@@ -10,5 +10,4 @@ export const BaseWrapper = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   margin-top:112px;
-  margin-bottom: 162px;
 `;

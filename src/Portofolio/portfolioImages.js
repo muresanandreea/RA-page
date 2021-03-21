@@ -174,11 +174,6 @@ export const portfolioLogo = [
 export const portfolioMobile = [
     {
         category:'mobile',
-        alt: "CakeFactory",
-        image: MobileImg1
-    },
-    {
-        category:'mobile',
         alt: "CFPresentation",
         image: MobileImg2
     },

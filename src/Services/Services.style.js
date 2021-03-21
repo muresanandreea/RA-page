@@ -8,9 +8,9 @@ const bounce = keyframes`
     `;
 
 const shimmerBackground = keyframes`
-    0% {background-position:-5000px 0}
-    100% {background-position:5000px 0}
-`
+    0% {background-position:-674px 0}
+    100% {background-position:674px 0}
+`;
 
 export const ServicesWrapper = styled.div`
   display:flex;
@@ -87,16 +87,13 @@ export const SocialMediacontentWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-    font-size:36px;
-    font-weight: 700;
-  h3 {
+    width: 674px;
     font-size: 72px;
     background: linear-gradient(
             45deg
             ,#402E32,#B0003A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation-delay: 2s;
-    animation: ${shimmerBackground} 100s linear infinite;
-  }
+    animation-delay: 0s;
+    animation: ${shimmerBackground} 8s linear infinite;
 `;
