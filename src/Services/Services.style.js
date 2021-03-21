@@ -4,15 +4,19 @@ import React from "react";
 
 const bounce = keyframes`
     0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
-    50% {transform: translateY(-5px)
+    50% {transform: translateY(-8px)
     `;
+
+const shimmerBackground = keyframes`
+    0% {background-position:-5000px 0}
+    100% {background-position:5000px 0}
+`
 
 export const ServicesWrapper = styled.div`
   display:flex;
   width: 100%;
   height:100%;
   min-height: 100vh;
-  background-color: #E1E0DF;
 `;
 
 export const ServicesTableWrapper = styled.div`
@@ -72,7 +76,7 @@ export const TableTitle = styled.div`
     transition: 0.2s;
   }
   :hover {
-    animation: ${bounce} 2s infinite linear;
+    animation: ${bounce} 1.2s infinite linear;
   }
 `;
 
@@ -89,8 +93,10 @@ export const Title = styled.div`
     font-size: 72px;
     background: linear-gradient(
             45deg
-            ,#402E32,#ECC091);
+            ,#402E32,#B0003A);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation-delay: 2s;
+    animation: ${shimmerBackground} 100s linear infinite;
   }
 `;

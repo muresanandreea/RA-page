@@ -39,7 +39,7 @@ export const PortofolioBoxesWrapper = styled.div`
   display:flex;
   width: 100%;
   justify-content: space-evenly;
-  margin: 64px 0;
+  margin: 64px 0 0 0 ;
 `;
 
 export const PortofolioLogoBox = styled.div`

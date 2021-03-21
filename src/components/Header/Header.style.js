@@ -130,7 +130,7 @@ export const ButtonText = styled.div`
     content: "";
     position: absolute;
     top: 76px;
-    height: 3px;
+    height: 1px;
     width:10%;
     background: #8DA092;
     visibility: hidden;

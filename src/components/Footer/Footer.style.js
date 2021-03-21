@@ -8,7 +8,6 @@ export const FooterWrapper = styled.div`
   height:12rem;
   background-color:#171616;
   align-items: center;
-  position:absolute;
   justify-content: flex-start;
 `;
 

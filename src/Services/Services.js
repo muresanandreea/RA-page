@@ -9,7 +9,7 @@ import {PrintSectionContent} from "./PrintSection";
 export const Services = () => {
     const [isCollapsedWeb, setIsCollapsedWeb] = useState(false);
     const [isCollapseSocial, setIsCollapsedSocial] = useState(false);
-    const [isCollapsedPrint, setIsCollapsedPrint] = useState(false);
+    const [isCollapsedPrint, setIsCollapsedPrint] = useState(true);
     return (
         <ServicesWrapper>
             <StickySideMenu/>
