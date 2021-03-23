@@ -12,11 +12,9 @@ import {headerLinks} from "../components/Header/constants";
 import {portfolioWeb,portfolioLogo,portfolioMobile} from './portfolioImages';
 import {ContactUsWidget} from "../components/utils/contactUsWidget/ContactUsWidget";
 import {ContactUsModal} from "../components/ContactUs/ContactUsModal";
-import {RequestButtonWrapper} from "../components/Header/Header.style";
 
 export const Portfolio = ({showModal,closeModal}) => {
     const [isLoading, setIsLoading] = useState(false);
-    const [contactUsModal, setContactUsModal] = useState(false);
 
     const imagesWeb = portfolioWeb.map (e => {
         return <img key={e.image} alt={e.alt} src={e.image} className="img-responsive" />
@@ -30,13 +28,8 @@ export const Portfolio = ({showModal,closeModal}) => {
         return <img key={e.image} alt={e.alt} src={e.image} className="img-responsive" />
     });
 
-    console.log(showModal,'open');
-    console.log(contactUsModal,'close');
-
     return (
         <Wrapper>
-            <ContactUsModal showModal={()=> setContactUsModal(true)}
-                            closeModal={()=> setContactUsModal(false)}/>
             <OurPortfolio>
                 <OurPortfolioTitle>Our <b>Portfolio</b></OurPortfolioTitle>
             </OurPortfolio>
@@ -70,7 +63,7 @@ export const Portfolio = ({showModal,closeModal}) => {
                     {imagesMobile}
                 </ImagesWrapper>
             </PortfolioAssetsWrapper>
-            <ContactUsWidget onClick = {()=>setContactUsModal(!contactUsModal)}/>
+            <ContactUsWidget/>
         </PortfolioWrapper>
         </Wrapper>
     )

@@ -1,12 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Circle} from './ContactUsWidget.style';
+import {ContactUsModal} from "../../ContactUs/ContactUsModal";
 
 
 export const ContactUsWidget = () => {
+    const [contactUsModal, setContactUsModal] = useState(false);
 
+    console.log(contactUsModal,'click');
     return (
-            <Circle>
+        <div>
+            {contactUsModal &&
+        <ContactUsModal  showModal={()=> setContactUsModal(!contactUsModal)}
+                         onClose={()=> setContactUsModal(!contactUsModal)}/>}
+            <Circle onClick = {()=>setContactUsModal(true)}>
             <i className="fas fa-comment-dots"/>
             </Circle>
+        </div>
     );
 }

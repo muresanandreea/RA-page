@@ -4,7 +4,7 @@ import {Wrapper,LogoWrapper,SideMenuButtonWrapper,ButtonWrapper,ButtonText,Reque
 import {ContactUsModal} from "../ContactUs/ContactUsModal";
 import {headerLinks} from "./constants";
 
-export const Header = ({showModal},{closeModal}) => {
+export const Header = () => {
     const [contactUsModal, setContactUsModal] = useState(false);
     return (
         <Wrapper>

@@ -44,7 +44,7 @@ export const Backdrop = styled.div`
   z-index:100;
   left:0;
   top:0;
-  animation: ${props => (props.showBackdrop ? showBackDrop : hideBackDrop)} 0.4s 
+  animation: ${props => (props ? showBackDrop : hideBackDrop)} 0.4s 
       ${props => (props.showBackdrop ? 'ease-in' : 'ease-out')};
   display:flex;
   align-items: center;
@@ -56,8 +56,7 @@ export const Modal = styled.div`
   z-index:500;
   background: radial-gradient(circle at 30% 107%, #7DA487 0%, #7DA487 5%, #8DA092 45%,#7DA487 60%,#8DA092 90%);
   box-sizing: border-box;
-  animation: ${props => (props.showBackdrop ? openModal : closeModal)} 0.4s
-  ${props => (props.showBackdrop ? 'ease-in' : 'ease-out')};
+  ${props => (props.showBackdrop ? 'animation: ${openModal} 0.4s ease-in' : 'animation: ${closeModal} 0.4s ease-out')};
   display: flex;
   justify-content: center;
   position: relative;
