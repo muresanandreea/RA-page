@@ -22,10 +22,11 @@ export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}, ref
         <>
             {isOpen && (
                 <Backdrop showBackdrop={showModal}>
-                    <Modal showModal={showModal} onAnimatedEnd={onAnimationEnd}>
+                    <Modal showModal={showModal} onAnimatedEnd={onAnimationEnd} onClose={closeModal}>
                         <ModalContentWrapper>
-                            <ContactUsForm showModal={showModal}/>
+                            <ContactUsForm/>
                             <LogoWrapper/>
+                            <div onClick={closeModal} className="closeButton">X</div>
                         </ModalContentWrapper>
                     </Modal>
                 </Backdrop>
