@@ -23,7 +23,6 @@ export const PortofolioSectionWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 56vh;
   background-color:#ECE8E4;
   padding: 20px 0 80px 0;
 `;
@@ -40,6 +39,7 @@ export const PortofolioBoxesWrapper = styled.div`
   width: 100%;
   justify-content: space-evenly;
   margin: 64px 0 0 0 ;
+  padding-bottom: 28px;
 `;
 
 export const PortofolioLogoBox = styled.div`

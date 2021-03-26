@@ -8,10 +8,10 @@ export const ContactUsWidget = () => {
 
     console.log(contactUsModal,'click');
     return (
-        <div>
+        <div >
             {contactUsModal &&
         <ContactUsModal  showModal={()=> setContactUsModal(!contactUsModal)}
-                         onClose={()=> setContactUsModal(!contactUsModal)}/>}
+                         closeModal={()=> setContactUsModal(false)}/>}
             <Circle onClick = {()=>setContactUsModal(true)}>
             <i className="fas fa-comment-dots"/>
             </Circle>

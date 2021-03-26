@@ -1,10 +1,16 @@
-import React,{useEffect, useState} from 'react';
+import React,{useEffect, useState,useRef} from 'react';
 import ContactUsForm from './ContactUsForm';
 import {Backdrop, Modal, ModalContentWrapper,LogoWrapper} from './ContactUsModal.styles.js';
+import {useOnClickOutside} from "../utils/clickOutside";
 
 export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}) => {
     const [isOpen, setIsOpen] = useState(defaultOpened);
 
+    // Create a ref that we add to the element for which we want to detect outside clicks
+    const ref = useRef();
+    // State for our modal
+    // Call hook passing in the ref and a function to call on outside click
+    useOnClickOutside(ref, () => setIsOpen(false));
     const onAnimationEnd = () => {
         if (!showModal) {
             setIsOpen(false);
@@ -21,8 +27,8 @@ export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}) => 
         <>
             {isOpen && (
                 <Backdrop showBackdrop={showModal}>
-                    <Modal showModal={showModal} onAnimatedEnd={onAnimationEnd} onClose={closeModal}>
-                        <ModalContentWrapper>
+                    <Modal ref={ref} showModal={showModal} onAnimatedEnd={onAnimationEnd}>
+                        <ModalContentWrapper >
                             <ContactUsForm/>
                             <LogoWrapper/>
                             <div onClick={closeModal} className="closeButton">X</div>
@@ -31,3 +37,4 @@ export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}) => 
                 </Backdrop>
             )}
         </>)};
+

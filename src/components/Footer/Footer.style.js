@@ -9,7 +9,6 @@ export const FooterWrapper = styled.div`
   background-color:#171616;
   align-items: center;
   justify-content: flex-start;
-  margin-top:12%;
 `;
 
 export const IconsWrapper = styled.div`

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Wrapper,LogoWrapper,SideMenuButtonWrapper,ButtonWrapper,ButtonText,RequestButtonWrapper,
     RequestButtonText} from './Header.style';
 import {ContactUsModal} from "../ContactUs/ContactUsModal";
@@ -15,12 +15,11 @@ export const Header = () => {
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
                     <RequestButtonWrapper onClick = {()=>setContactUsModal(!contactUsModal)}>
                         <RequestButtonText style={{fontWeight:'700'}}>Request for quotation</RequestButtonText>
-                        {contactUsModal &&
-                        <ContactUsModal showModal={()=> setContactUsModal(!contactUsModal)}
-                                        onClose={()=> setContactUsModal(false)}/>
-
-                        }
                     </RequestButtonWrapper>
+                    {contactUsModal &&
+                    <ContactUsModal showModal={()=> setContactUsModal(!contactUsModal)}
+                                    closeModal={()=> setContactUsModal(false)}/>
+                    }
                 </div>
   {/*          <SideMenuButtonWrapper  onClick={()=>setSidemenuIsOpen(!sidemenuIsOpen)}>
                 <i className="fas fa-bars" color={'#acdbdf'}></i>

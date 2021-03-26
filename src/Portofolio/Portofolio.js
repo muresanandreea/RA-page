@@ -13,7 +13,7 @@ import {portfolioWeb,portfolioLogo,portfolioMobile} from './portfolioImages';
 import {ContactUsWidget} from "../components/utils/contactUsWidget/ContactUsWidget";
 import {ContactUsModal} from "../components/ContactUs/ContactUsModal";
 
-export const Portfolio = ({showModal,closeModal}) => {
+export const Portfolio = ({onClose,closeModal}) => {
     const [isLoading, setIsLoading] = useState(false);
 
     const imagesWeb = portfolioWeb.map (e => {
@@ -63,7 +63,7 @@ export const Portfolio = ({showModal,closeModal}) => {
                     {imagesMobile}
                 </ImagesWrapper>
             </PortfolioAssetsWrapper>
-            <ContactUsWidget/>
+            <ContactUsWidget onClose={onClose}/>
         </PortfolioWrapper>
         </Wrapper>
     )
