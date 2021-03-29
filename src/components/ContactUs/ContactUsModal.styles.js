@@ -71,16 +71,24 @@ export const ModalContentWrapper = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  .closeButton{
-    top: 4px;
-    position: absolute;
-    right: 8px;
-    font-size: 20px;
-    color: rgba(0,0,0,0.54);
+`;
+
+export const CloseButton = styled.div`
+  position: relative;
+  transition: transform .25s, opacity .25s;
+  opacity: .7;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: serif;
+  line-height: 1;
+  :before{
+    content: "\\d7";
+  };
     :hover{
       cursor: pointer;
+        transform:rotate(180deg);
+      }
     }
-  }
 `;
 
 export const ContactUsButton = styled.div`

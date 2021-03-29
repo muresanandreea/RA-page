@@ -1,6 +1,6 @@
 import React,{useEffect, useState,useRef} from 'react';
 import ContactUsForm from './ContactUsForm';
-import {Backdrop, Modal, ModalContentWrapper,LogoWrapper} from './ContactUsModal.styles.js';
+import {Backdrop, Modal, ModalContentWrapper,LogoWrapper, CloseButton} from './ContactUsModal.styles.js';
 import {useOnClickOutside} from "../utils/clickOutside";
 
 export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}) => {
@@ -31,7 +31,9 @@ export const ContactUsModal = ({defaultOpened=false, showModal, closeModal}) => 
                         <ModalContentWrapper >
                             <ContactUsForm/>
                             <LogoWrapper/>
-                            <div onClick={closeModal} className="closeButton">X</div>
+                            <div style={{height:'100%', display:'flex',alignItems:'flex-start', padding:'0 4px'}}>
+                                <CloseButton onClick={closeModal}/>
+                            </div>
                         </ModalContentWrapper>
                     </Modal>
                 </Backdrop>

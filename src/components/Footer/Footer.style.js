@@ -29,7 +29,9 @@ export const Icon = styled.a`
   color:#ECC091;
   font-size:20px;
   :hover{
-    color:#fff
+    color:#fff;
+    box-shadow: 0 0 15px  #fff;
+    transition: all 0.5s ease;
   }
 };
   .fa-instagram{
@@ -39,6 +41,8 @@ export const Icon = styled.a`
       color:#fff;
       background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
       border-radius:4px;
+      box-shadow: 0 0 15px  #e6683c;
+      transition: all 0.5s ease;
     }
   };
   .fa-twitter{
@@ -46,6 +50,8 @@ export const Icon = styled.a`
     font-size:20px;
     :hover{
       color:#1DA1F2;
+      box-shadow: 0 0 15px  #1DA1F2;
+      transition: all 0.5s ease;
     }
   };
   .fa-facebook-f{
@@ -53,6 +59,8 @@ export const Icon = styled.a`
     font-size:20px;
     :hover{
       color:#4267B2;
+      box-shadow: 0 0 15px  #4267B2;
+      transition: all 0.5s ease;
     }
   }
 `;
