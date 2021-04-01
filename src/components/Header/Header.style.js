@@ -82,7 +82,7 @@ export const Wrapper= styled.div`
     stroke-width: 3px;
     fill: transparent;
     stroke: #7DA487;
-    stroke-dasharray: 165 400;
+    stroke-dasharray: 160 400;
     stroke-dashoffset: -220;
     transition: 1s all ease;
     padding:0;
@@ -151,24 +151,7 @@ export const RequestButtonWrapper = styled.div`
   justify-content: center;
   cursor:pointer;
   border-radius:16px;
-  margin-left:10rem;
-  :hover{>div{color:#211F1D}}
-  :before {
-    content: "";
-    background: #8DA092;
-    position: absolute;
-    width: 19%;
-    height: 10%;
-    margin-bottom: 24px;
-    bottom:0;
-    border-radius: 5px;
-    transform: scaleX(0);
-    z-index: -1;
-  }
-  :hover:before {
-    animation: .5s forwards ${hover} linear;
-    animation-fill-mode: forwards;
-  }
+  margin-left:4rem;
 `;
 
 export const RequestButtonText = styled.div`
