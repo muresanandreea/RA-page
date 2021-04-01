@@ -76,6 +76,19 @@ export const Title = styled.div`
     animation: ${shimmerBackground} 8s linear infinite;
 `;
 
+export const MobileTitle = styled.div`
+    width: 600px;
+    font-size: 72px;
+    background: linear-gradient(
+            45deg
+            ,#402E32,#B0003A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-delay: 0s;
+    animation: ${shimmerBackground} 8s linear infinite;
+`;
+
+
 export const OurPortfolio = styled.div`
   background: linear-gradient(to bottom, #171616 0%, #ece8e4 100%);
   height:4%;
@@ -103,4 +116,12 @@ export const Wrapper = styled.div`
   ${media.mobileAndTablet}{
     width: 100vw;
   }
+`;
+
+export const PortfolioDivider = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color:#7DA487;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
 `;

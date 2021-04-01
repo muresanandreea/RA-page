@@ -1,5 +1,6 @@
 import styled,{keyframes} from 'styled-components';
 import Logo from '../../assets/contactUsLogo.svg';
+import {media} from "../utils/stylesVariables";
 
 const showBackDrop = keyframes`
   0%{
@@ -60,10 +61,14 @@ export const Modal = styled.div`
   display: flex;
   justify-content: center;
   position: relative;
-  width: 40vw;
-  height: 60vh;
+  width: 50vw;
+  height: 74vh;
   min-width: 340px;
   border-radius: 8px;
+  ${media.mobileAndTablet}{
+    width: 60vw;
+    height: 74vh;
+  }
 `;
 
 export const ModalContentWrapper = styled.div`
@@ -88,24 +93,8 @@ export const CloseButton = styled.div`
       cursor: pointer;
         transform:rotate(180deg);
       }
-    }
 `;
 
-export const ContactUsButton = styled.div`
-  width: 88px;
-  height: 32px;
-  border: 1px solid red;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:lavender;
-  font-family: Helvetica-regular;
-  font-size:18px;
-  margin-top: 33px;
-  cursor:pointer;
-`;
 
 export const FormContact = styled.div`
   display: flex;
@@ -134,6 +123,24 @@ export const ContactUsFormWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  .submit{
+    width: 88px;
+    height: 32px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:lavender;
+    background-color: #fff;
+    font-family: Helvetica-regular;
+    font-size:18px;
+    cursor:pointer;
+    margin-top:2vh;
+    :hover{
+      background-color: #7DA487;
+    }
+  }
 `;
 
 export const Title = styled.h2`

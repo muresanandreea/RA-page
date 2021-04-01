@@ -74,7 +74,7 @@ const ContactUsForm = ({showModal}) =>  {
                         name="message"
                     />
                 </InputWrapper>
-                        <input type="submit" value="Send"/>
+                        <input type="submit" className="submit" value="Send"/>
             </form>
         </ContactUsFormWrapper>
     )

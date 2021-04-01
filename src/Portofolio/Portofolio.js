@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper,TitleWrapper,Title,
-    OurPortfolio, OurPortfolioTitle, Wrapper} from './Portofolio.style';
+    OurPortfolio, OurPortfolioTitle, Wrapper, PortfolioDivider,MobileTitle} from './Portofolio.style';
 import {
     ButtonText, ButtonWrapper,
     ButtonWrapperCurrent,
@@ -11,7 +11,6 @@ import {
 import {headerLinks} from "../components/Header/constants";
 import {portfolioWeb,portfolioLogo,portfolioMobile} from './portfolioImages';
 import {ContactUsWidget} from "../components/utils/contactUsWidget/ContactUsWidget";
-import {ContactUsModal} from "../components/ContactUs/ContactUsModal";
 
 export const Portfolio = ({onClose,closeModal}) => {
     const [isLoading, setIsLoading] = useState(false);
@@ -50,14 +49,16 @@ export const Portfolio = ({onClose,closeModal}) => {
                 <ImagesWrapper>
                     {imagesWeb}
                 </ImagesWrapper>
+                <PortfolioDivider/>
                 <TitleWrapper>
                 <Title>Our <b>Logos</b></Title>
                 </TitleWrapper>
                 <ImagesWrapper>
                     {imagesLogo}
                 </ImagesWrapper>
+                <PortfolioDivider/>
                 <TitleWrapper>
-                <Title><b>Mobile</b> responsive</Title>
+                <MobileTitle><b>Mobile</b> responsive</MobileTitle>
                 </TitleWrapper>
                 <ImagesWrapper>
                     {imagesMobile}

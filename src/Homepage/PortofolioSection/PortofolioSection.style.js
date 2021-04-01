@@ -16,6 +16,15 @@ const seeMoreAnimation = keyframes`
 }
 `;
 
+const spinLetters = keyframes`
+  0%,100% {
+    transform: rotate(-5.9deg) translateX(0%);
+  }
+  50% {
+    transform: rotate(-5.9deg) translateX(-100%);
+  }
+`;
+
 
 
 export const PortofolioSectionWrapper = styled.div`
@@ -32,6 +41,8 @@ export const PortofolioSectionTitle = styled.div`
   font-size:25px;
   font-family: Arvo-Bold;
   font-weight: 700;
+  cursor:default;
+  animation: ${spinLetters} 5s infinite linear;
 `;
 
 export const PortofolioBoxesWrapper = styled.div`
@@ -43,7 +54,8 @@ export const PortofolioBoxesWrapper = styled.div`
 `;
 
 export const PortofolioLogoBox = styled.div`
-    width: 368px;
+    width: 359px;
+    height:359px;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -72,7 +84,8 @@ export const PortofolioLogoImage = styled.div`
 `;
 
 export const PortofolioWebBox = styled.div`
-  width: 368px;
+  width: 359px;
+  height:359px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -101,7 +114,8 @@ export const PortofolioWebImage = styled.div`
 `;
 
 export const PortofolioMobileBox = styled.div`
-  width: 368px;
+  width: 359px;
+  height:359px;
   display:flex;
   flex-direction: column;
   flex-wrap: wrap;

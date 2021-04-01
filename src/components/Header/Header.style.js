@@ -48,6 +48,73 @@ export const Wrapper= styled.div`
   position:fixed;
   justify-content: space-between;
   z-index:1;
+  .spot {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding:0;
+    margin:0;
+  };
+  .svg-wrapper {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 174px;
+    /*make sure to use same height/width as in the html*/
+    height: 40px;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:0;
+  }
+  /*
+    This is where we define the fill, color, thickness,
+    and stroke pattern of the SVG when there is no hover.
+    The dasharray and offset together define the line position
+    under the words. Here's also where the transition speed is set.
+  */
+
+  #shape {
+    stroke-width: 3px;
+    fill: transparent;
+    stroke: #7DA487;
+    stroke-dasharray: 165 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease;
+    padding:0;
+    margin:0;
+    :hover{
+      stroke-dasharray: 50 0;
+      stroke-width: 3px;
+      stroke-dashoffset: 0;
+      stroke: #06D6A0;
+    }
+  }
+  /* 
+      Pushing the text up into the SVG. Without this the
+      text would be below the div's.
+  */
+
+  #text {
+    margin-top: -35px;
+    text-align: center;
+    padding:0;
+    color:#06D6A0;
+    margin:0;
+  }
+
+  #text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1em;
+    padding:0;
+    margin:0;
+  }
 `;
 
 export const LogoWrapper= styled.a`

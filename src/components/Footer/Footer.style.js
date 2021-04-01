@@ -5,7 +5,7 @@ export const FooterWrapper = styled.div`
   bottom:0;
   flex-direction:column;
   width: 100%;
-  height:12rem;
+  height:20rem;
   background-color:#171616;
   align-items: center;
   justify-content: flex-start;
@@ -17,7 +17,12 @@ export const IconsWrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  margin: 6%;
 `;
 
 export const Icon = styled.a`
@@ -74,7 +79,7 @@ export const Divider = styled.div`
 export const CopyrightText = styled.div`
   color:#ECC091;
   font-family:Arial-Regular;
-  font-size:12px;
+  font-size:16px;
   cursor:default;
   margin-bottom: 8px;
 `;
@@ -82,7 +87,8 @@ export const CopyrightText = styled.div`
 export const PrivacyPolicyText = styled.div`
   color:#ECC091;
   font-family:Arial-Regular;
-  font-size:12px;
+  font-size:16px;
   cursor:pointer;
   margin-bottom: 40px;
 `;
+

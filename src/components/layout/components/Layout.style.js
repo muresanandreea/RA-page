@@ -5,6 +5,7 @@ export const BaseWrapper = styled.div`
   height:100%;
   min-height: 100vh;
   background-color:#ECE8E4;
+  width:98vw;
 `;
 
 export const ContentWrapper = styled.div`

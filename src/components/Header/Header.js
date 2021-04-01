@@ -13,9 +13,15 @@ export const Header = () => {
                     <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.portfolio}><ButtonText>Portofolio</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
-                    <RequestButtonWrapper onClick = {()=>setContactUsModal(!contactUsModal)}>
-                        <RequestButtonText style={{fontWeight:'700'}}>Request for quotation</RequestButtonText>
-                    </RequestButtonWrapper>
+                    <div className="svg-wrapper" onClick = {()=>setContactUsModal(!contactUsModal)}>
+                        <svg height="40" width="174" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                                <rect id="shape" height="40" width="174"/>
+                                <text x="12" y="24" fill="#06D6A0"> Request for quotation </text>
+                            </g>
+
+                        </svg>
+                    </div>
                     {contactUsModal &&
                     <ContactUsModal showModal={()=> setContactUsModal(!contactUsModal)}
                                     closeModal={()=> setContactUsModal(false)}/>
