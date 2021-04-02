@@ -8,16 +8,18 @@ import {PortofolioSection} from "./PortofolioSection/PoftofolioSection";
 import Image1 from '../assets/anotherStormTrooper.jpg';
 import Image2 from '../assets/bobaFett.jpg';
 import Image3 from '../assets/stormTrooper.jpg';
+import Slider from '../components/utils/imageSlider/Slider';
 
 export const Homepage = () => {
+
+    const images=[
+            Image1,Image2,Image3
+        ];
+
     return (
         <HomepageWrapper>
             {/*<Hero/>*/}
-            <Slideshow
-                interval={3000}
-                images={[
-                    Image1,Image2,Image3
-                ]}/>
+            <Slider slides={images} />
             <MidSection/>
             <PortofolioSection/>
 {/*            <UnderConstructionwrapper>

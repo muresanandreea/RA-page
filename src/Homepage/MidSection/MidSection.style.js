@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import Dev from '../../assets/homepage/Dev.svg';
+import Design from '../../assets/homepage/Design.svg';
 
 export const MidSectionWrapper = styled.div`
   display:flex;
@@ -16,9 +18,11 @@ export const DesignSection = styled.div`
 `;
 
 export const DesignImage = styled.div`
-  width:200px;
-  height:200px;
-  background-color:lavender;
+  width:240px;
+  height:240px;
+  background-image: url(${Design});
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
 
 export const DevSection = styled.div`
@@ -26,14 +30,16 @@ export const DevSection = styled.div`
 `;
 
 export const DevImage = styled.div`
-  width:200px;
-  height:200px;
-  background-color:lavender;
+  width:240px;
+  height:240px;
+  background-image: url(${Dev});
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
 
 export const SectionText = styled.div`
   padding:20px;
-  color:#E8E4E4;
+  color:darkgreen;
   font-family: Arvo-Regular;
   font-size:20px;
 `;
