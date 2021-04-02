@@ -1,16 +1,22 @@
 import React, {useState} from "react";
 import {ServicesWrapper, ServicesTableWrapper, WebsiteSection,TableTitle,Title,
-    SocialMediaSection, PrintWrapper, WebsiteTitle, SocialMediaTitle, PrintTitle} from './Services.style';
+    SocialMediaSection, PrintWrapper, WebsiteTitle, SocialMediaTitle, PrintTitle,ServicesPageWrapper} from './Services.style';
 import {StickySideMenu} from "../components/utils/stickySideMenu/StickySideMenuComponent";
 import {WebsiteSectionContent} from "./WebsiteSection";
 import {SocialMediaSectionContent} from "./SocialMedia";
 import {PrintSectionContent} from "./PrintSection";
+import {OurPortfolio, OurPortfolioTitle, Wrapper} from "../Portofolio/Portofolio.style";
+import {ContactUsWidget} from "../components/utils/contactUsWidget/ContactUsWidget";
 
-export const Services = () => {
+export const Services = ({onClose}) => {
     const [isCollapsedWeb, setIsCollapsedWeb] = useState(false);
     const [isCollapseSocial, setIsCollapsedSocial] = useState(false);
     const [isCollapsedPrint, setIsCollapsedPrint] = useState(true);
     return (
+        <ServicesPageWrapper>
+        <OurPortfolio>
+            <OurPortfolioTitle>Our <b>Services</b></OurPortfolioTitle>
+        </OurPortfolio>
         <ServicesWrapper>
             <StickySideMenu/>
             <ServicesTableWrapper>
@@ -37,6 +43,8 @@ export const Services = () => {
                     {isCollapsedPrint && <PrintSectionContent/>}
                 </PrintWrapper>
             </ServicesTableWrapper>
+            <ContactUsWidget onClose={onClose}/>
         </ServicesWrapper>
+        </ServicesPageWrapper>
     )
 }

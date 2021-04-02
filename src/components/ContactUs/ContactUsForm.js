@@ -42,12 +42,14 @@ const ContactUsForm = ({showModal}) =>  {
                 </InputWrapper>
                 <InputWrapper>
                     <TextField
+                        error
                         id="outlined-size-small"
                         variant="outlined"
                         label="Your phone number"
                         type="number"
                         name="phone"
                         size="small"
+                        helperText="Phone number is mandatory."
                         InputLabelProps={{
                             shrink: true,
                         }}
@@ -55,12 +57,14 @@ const ContactUsForm = ({showModal}) =>  {
                 </InputWrapper>
                 <InputWrapper>
                     <TextField
+                        error
                         label="Your email"
                         id="outlined-size-small"
                         defaultValue=" "
                         variant="outlined"
                         size="small"
                         name="_replyto"
+                        helperText="Email address is mandatory."
                     />
                 </InputWrapper>
                 <InputWrapper>
@@ -69,6 +73,7 @@ const ContactUsForm = ({showModal}) =>  {
                         label="Your message to us"
                         multiline
                         rows={4}
+                        width={226}
                         defaultValue=" "
                         variant="outlined"
                         name="message"

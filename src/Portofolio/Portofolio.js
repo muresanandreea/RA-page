@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper,TitleWrapper,Title,
-    OurPortfolio, OurPortfolioTitle, Wrapper, PortfolioDivider,MobileTitle} from './Portofolio.style';
+    OurPortfolio, OurPortfolioTitle, Wrapper, PortfolioDivider,MobileTitle,
+    PortofolioPageWrapper} from './Portofolio.style';
 import {
     ButtonText, ButtonWrapper,
     ButtonWrapperCurrent,

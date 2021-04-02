@@ -97,3 +97,9 @@ export const Title = styled.div`
     animation-delay: 0s;
     animation: ${shimmerBackground} 8s linear infinite;
 `;
+
+export const ServicesPageWrapper = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+`;

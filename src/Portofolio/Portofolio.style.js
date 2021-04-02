@@ -125,3 +125,7 @@ export const PortfolioDivider = styled.div`
   margin-top: 8vh;
   margin-bottom: 8vh;
 `;
+
+export const PortofolioPageWrapper = styled.div`
+  width: 100%;
+`;
