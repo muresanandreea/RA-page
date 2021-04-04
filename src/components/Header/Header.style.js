@@ -258,6 +258,7 @@ export const MobileMenuItemsWrapper = styled.div`
 export const LinkItem = styled.a`
   text-decoration: none;
   color: #000;
+  padding-top: 20px;
 `;
 
 export const SideMenuButtonLine = styled.span`

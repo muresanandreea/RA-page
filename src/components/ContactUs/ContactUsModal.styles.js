@@ -64,10 +64,12 @@ export const Modal = styled.div`
   width: 50vw;
   height: 74vh;
   min-width: 340px;
-  border-radius: 8px;
+  border-radius: 0;
   ${media.mobileAndTablet}{
     width: 60vw;
-    height: 74vh;
+    height: 90vh;
+    background: #fff;
+    border-radius: 0;
   }
 `;
 
@@ -112,6 +114,9 @@ export const LogoWrapper = styled.div`
   background-repeat: no-repeat;
   padding-bottom: 10%;
   padding-right: 24px;
+  ${media.mobileAndTablet}{
+    display: none;
+  }
 `;
 
 
@@ -140,6 +145,9 @@ export const ContactUsFormWrapper = styled.div`
     :hover{
       background-color: #7DA487;
     }
+  };
+  ${media.mobileAndTablet}{
+    width: 100%;
   }
 `;
 
