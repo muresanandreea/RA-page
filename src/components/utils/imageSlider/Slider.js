@@ -1,21 +1,37 @@
 /** @jsxImportSource @emotion/react */
-import React, { useState, useEffect, useRef } from 'react';
-import { css, jsx } from '@emotion/react';
-import SliderContent from './SliderContentComponent';
-import Slide from './SlideComponent';
-import Arrow from './Arrow';
-import Dots from './DotsComponent';
+import React, { useState, useEffect, useRef } from 'react'
+import { css, jsx } from '@emotion/react'
+import SliderContent from './SliderContentComponent'
+import Slide from './SlideComponent'
+import Arrow from './Arrow'
+import Dots from './DotsComponent'
 
+const getWidth = () => window.innerWidth
+
+/**
+ * @function Slider
+ */
 const Slider = props => {
-    const getWidth = () => window.innerWidth
-
     const [state, setState] = useState({
         activeIndex: 0,
         translate: 0,
         transition: 0.45
     })
-
     const { translate, transition, activeIndex } = state
+    const autoPlayRef = useRef()
+
+    useEffect(() => {
+        autoPlayRef.current = nextSlide
+    })
+
+    useEffect(() => {
+        const play = () => {
+            autoPlayRef.current()
+        }
+
+        const interval = setInterval(play, props.autoPlay * 1000)
+        return () => clearInterval(interval)
+    }, [])
 
     const nextSlide = () => {
         if (activeIndex === props.slides.length - 1) {
@@ -69,6 +85,11 @@ const Slider = props => {
     )
 }
 
+Slider.defaultProps = {
+    slides: [],
+    autoPlay: null
+}
+
 const SliderCSS = css`
   position: relative;
   height: 70vh;
@@ -76,4 +97,5 @@ const SliderCSS = css`
   margin: 0 auto;
   overflow: hidden;
 `
+
 export default Slider

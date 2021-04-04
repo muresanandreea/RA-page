@@ -3,6 +3,7 @@ import LogoImage from '../../assets/stormTrooper.jpg';
 import WebImage from '../../assets/bobaFett.jpg';
 import MobileImage from '../../assets/anotherStormTrooper.jpg';
 import ArrowLeft from '../../assets/arrowRight.svg';
+import {media} from "../../components/utils/stylesVariables";
 
 const seeMoreAnimation = keyframes`
 0%{
@@ -34,15 +35,16 @@ export const PortofolioSectionWrapper = styled.div`
   width: 100%;
   background-color:#ECE8E4;
   padding: 20px 0 80px 0;
+  ${media.mobileAndTablet}{
+    display: none
+  }
 `;
 
 export const PortofolioSectionTitle = styled.div`
   color:#402E32;
-  font-size:25px;
-  font-family: Arvo-Bold;
-  font-weight: 700;
+  font-size:80px;
+  font-family: Arvo-Regular;
   cursor:default;
-  animation: ${spinLetters} 5s infinite linear;
 `;
 
 export const PortofolioBoxesWrapper = styled.div`

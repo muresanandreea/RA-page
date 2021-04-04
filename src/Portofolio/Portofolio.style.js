@@ -22,7 +22,7 @@ const shimmerBackground = keyframes`
 `;
 
 export const PortfolioWrapper = styled.div`
-  width: 100%;
+  width: 100vw;
   height:100%;
   background-color: #ECE8E4;
   display: flex;
@@ -31,9 +31,8 @@ export const PortfolioWrapper = styled.div`
 export const ImagesWrapper = styled.div`
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
-  
   grid-gap: 20px;
-  width: 100%;
+  width: 88%;
   margin:20px;
   >img{
     background-size: contain;
@@ -60,6 +59,7 @@ export const TitleWrapper = styled.div`
 export const PortfolioAssetsWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   margin-bottom: 190px;
 `;
@@ -128,4 +128,13 @@ export const PortfolioDivider = styled.div`
 
 export const PortofolioPageWrapper = styled.div`
   width: 100%;
+`;
+
+export const WidgetWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 8vw;
+  ${media.mobileAndTablet}{
+    width: auto;
+  }
 `;

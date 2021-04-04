@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react'
-import { css, jsx } from '@emotion/react';
+import { css, jsx } from '@emotion/react'
 
 const Arrow = ({ direction, handleClick }) => (
     <div
@@ -29,7 +29,7 @@ const Arrow = ({ direction, handleClick }) => (
       }
     `}
     >
-        {direction === 'right' ? <i className="fas fa-arrow-right"></i> : <i className="fas fa-arrow-left"></i>}
+        {direction === 'right' ? <i className="fas fa-arrow-right"/> : <i className="fas fa-arrow-left"/>}
     </div>
 )
 

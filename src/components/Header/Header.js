@@ -1,15 +1,16 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {Wrapper,LogoWrapper,SideMenuButtonWrapper,ButtonWrapper,ButtonText,RequestButtonWrapper,
-    RequestButtonText} from './Header.style';
+    HeaderDesktopContent, MobileMenuWrapper} from './Header.style';
 import {ContactUsModal} from "../ContactUs/ContactUsModal";
 import {headerLinks} from "./constants";
 
 export const Header = () => {
     const [contactUsModal, setContactUsModal] = useState(false);
+    const [mobileMenuisOpen, setMobileMenuIsOpen] = useState(false);
     return (
         <Wrapper>
             <LogoWrapper href={headerLinks.homepage}/>
-                <div style={{display:'flex',justifyContent:'flex-end', flex:'1', marginRight:'4%'}}>
+                <HeaderDesktopContent>
                     <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.portfolio}><ButtonText>Portofolio</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
@@ -27,10 +28,15 @@ export const Header = () => {
                     <ContactUsModal showModal={()=> setContactUsModal(!contactUsModal)}
                                     closeModal={()=> setContactUsModal(false)}/>
                     }
-                </div>
-  {/*          <SideMenuButtonWrapper  onClick={()=>setSidemenuIsOpen(!sidemenuIsOpen)}>
+                </HeaderDesktopContent>
+            <SideMenuButtonWrapper  onClick={()=>setMobileMenuIsOpen(!mobileMenuisOpen)}>
                 <i className="fas fa-bars" color={'#acdbdf'}></i>
-            </SideMenuButtonWrapper>*/}
+            </SideMenuButtonWrapper>
+            {mobileMenuisOpen &&
+                <MobileMenuWrapper>
+
+                </MobileMenuWrapper>
+            }
         </Wrapper>
     )
 }

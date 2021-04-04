@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper,TitleWrapper,Title,
-    OurPortfolio, OurPortfolioTitle, Wrapper, PortfolioDivider,MobileTitle,
+    OurPortfolio, OurPortfolioTitle, Wrapper, PortfolioDivider,MobileTitle,WidgetWrapper,
     PortofolioPageWrapper} from './Portofolio.style';
 import {
     ButtonText, ButtonWrapper,
@@ -65,7 +65,9 @@ export const Portfolio = ({onClose,closeModal}) => {
                     {imagesMobile}
                 </ImagesWrapper>
             </PortfolioAssetsWrapper>
-            <ContactUsWidget onClose={onClose}/>
+            <WidgetWrapper>
+                <ContactUsWidget onClose={onClose}/>
+            </WidgetWrapper>
         </PortfolioWrapper>
         </Wrapper>
     )

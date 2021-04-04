@@ -1,13 +1,17 @@
 import styled from 'styled-components';
+import {media} from "../stylesVariables";
 
 export const SideMenuWrapper = styled.div`
   position: sticky;
   top: 24%;
-  width: 160px;
+  width: 5vw;
   height: 273px;
   margin-top: 4%;
-  margin-left: 4%;
+  margin-left: 2%;
   display: flex;
+  ${media.mobileAndTablet}{
+    display: none;
+  }
 `;
 
 export const SideMenuSections = styled.div`

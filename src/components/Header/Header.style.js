@@ -1,5 +1,6 @@
 import styled, {keyframes} from 'styled-components';
 import Logo from '../../assets/logo.svg';
+import {media} from "../utils/stylesVariables";
 
 
 const nohover = keyframes`
@@ -40,7 +41,7 @@ const hover = keyframes`
 export const Wrapper= styled.div`
   top:0;
   display:flex;
-  width: 100%;
+  width: 100vw;
   height:7rem;
   background-color:#171616;
   box-shadow: rgb(0 0 0 /37%) 0px 0px 9px 0px;
@@ -133,6 +134,9 @@ export const SideMenuButtonWrapper= styled.div`
   font-size: 20px;
   cursor:pointer;
   display: none;
+  ${media.mobileAndTablet}{
+    display: flex;
+  }
 `;
 
 export const ButtonWrapper = styled.a`
@@ -196,3 +200,15 @@ export const ButtonText = styled.div`
 
 export const SideMenuWrapper = styled.div``;
 
+export const HeaderDesktopContent = styled.div`
+  display:flex;
+  justify-content:flex-end;
+  flex:1;
+  margin-right:4%;
+  ${media.mobileAndTablet}{
+    display: none}
+`;
+
+export const MobileMenuWrapper = styled.div`
+
+`;

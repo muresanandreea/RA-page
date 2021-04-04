@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Dev from '../../assets/homepage/Dev.svg';
 import Design from '../../assets/homepage/Design.svg';
+//import {media} from "../../components/utils/stylesVariables";
 
 export const MidSectionWrapper = styled.div`
   display:flex;
@@ -8,7 +9,7 @@ export const MidSectionWrapper = styled.div`
   width: 100%;
   height: 40vh;
   background-color:#ECE8E4;
-  padding: 20px 0;
+  padding: 50px 0;
 `;
 
 export const DesignSection = styled.div`

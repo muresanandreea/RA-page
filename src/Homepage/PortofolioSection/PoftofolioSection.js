@@ -10,7 +10,7 @@ export const PortofolioSection = (props) => {
 
     return (
         <PortofolioSectionWrapper>
-            <PortofolioSectionTitle>Portofolio</PortofolioSectionTitle>
+            <PortofolioSectionTitle>Our <b>Services</b></PortofolioSectionTitle>
             <PortofolioBoxesWrapper>
             <PortofolioLogoBox>
                 <PortofolioLogoImage/>

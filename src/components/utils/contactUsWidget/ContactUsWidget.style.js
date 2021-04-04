@@ -10,7 +10,6 @@ export const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 16px 16px 0;
   position: sticky;
   top: 88%;
   z-index: 10;

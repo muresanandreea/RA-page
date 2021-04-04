@@ -19,7 +19,7 @@ export const Homepage = () => {
     return (
         <HomepageWrapper>
             {/*<Hero/>*/}
-            <Slider slides={images} />
+            <Slider slides={images} autoPlay={2} />
             <MidSection/>
             <PortofolioSection/>
 {/*            <UnderConstructionwrapper>
