@@ -1,5 +1,6 @@
 import styled, {keyframes} from 'styled-components';
 import React from "react";
+import {media} from "../components/utils/stylesVariables";
 
 
 const bounce = keyframes`
@@ -23,10 +24,13 @@ export const ServicesTableWrapper = styled.div`
   display:flex;
   flex-direction: column;
   color:#E1E0DF;
-  width: 100%;
+  width: 80vw;
   align-items: center;
   padding: 20px;
   margin-bottom: 191px;
+  ${media.mobileAndTablet}{
+    padding:0;
+  }
 `;
 
 export const WebsiteSection = styled.div`
@@ -87,7 +91,7 @@ export const SocialMediacontentWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-    width: 674px;
+    width: 80vw;
     font-size: 72px;
     background: linear-gradient(
             45deg
@@ -96,6 +100,12 @@ export const Title = styled.div`
     -webkit-text-fill-color: transparent;
     animation-delay: 0s;
     animation: ${shimmerBackground} 8s linear infinite;
+  ${media.mobileAndTablet}{
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ServicesPageWrapper = styled.div`

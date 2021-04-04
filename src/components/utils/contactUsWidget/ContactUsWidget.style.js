@@ -12,7 +12,6 @@ export const Circle = styled.div`
   justify-content: center;
   position: sticky;
   top: 88%;
-  z-index: 10;
   .fa-comment-dots{
     color:#ECE8E4;
     font-size:28px;

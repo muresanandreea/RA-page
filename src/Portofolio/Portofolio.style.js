@@ -47,6 +47,7 @@ export const ImagesWrapper = styled.div`
   ${media.mobileAndTablet}{
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -60,12 +61,12 @@ export const PortfolioAssetsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 80vw;
   margin-bottom: 190px;
 `;
 
 export const Title = styled.div`
-    width: 446px;
+    width: 100vw;
     font-size: 72px;
     background: linear-gradient(
             45deg
@@ -74,6 +75,15 @@ export const Title = styled.div`
     -webkit-text-fill-color: transparent;
     animation-delay: 0s;
     animation: ${shimmerBackground} 8s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ${media.mobileAndTablet}{
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const MobileTitle = styled.div`
@@ -93,12 +103,11 @@ export const OurPortfolio = styled.div`
   background: linear-gradient(to bottom, #171616 0%, #ece8e4 100%);
   height:4%;
   min-height:240px;
-  width:100%;
+  width:100vw;
 `;
 
 export const OurPortfolioTitle = styled.div`
   margin-left:4%;
-    width: 446px;
     font-size: 72px;
     background: linear-gradient(
             45deg
@@ -107,6 +116,9 @@ export const OurPortfolioTitle = styled.div`
     -webkit-text-fill-color: transparent;
     animation-delay: 0s;
     animation: ${shimmerBackground} 8s linear infinite;
+  ${media.mobileAndTablet}{
+    font-size: 54px;
+  }
 `;
 
 export const Wrapper = styled.div`

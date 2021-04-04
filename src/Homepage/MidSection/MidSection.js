@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {MidSectionWrapper,DesignSection,DesignImage,SectionText,
-    DevSection,DevImage} from './MidSection.style';
+    DevSection,DevImage, MobileDesignSection, MobileDevSection, MobileDesignDevSection,
+    MobileDesignButton, MobileDevButton, MobileDesignText, MobileDevText, Buttons, MobileDesignImage,
+    MobileDevImage, WhiteCircle} from './MidSection.style';
 
 export const MidSection = () => {
-
+    const [isSelected, setIsSelected] = useState(true);
+    console.log(isSelected);
     return (
         <MidSectionWrapper>
             <DesignSection>
@@ -25,7 +28,20 @@ export const MidSection = () => {
                     </SectionText>
                 </div>
             </DevSection>
-
+            <MobileDesignDevSection>
+                <Buttons>
+            <MobileDesignButton isSelected={isSelected} onClick={()=>setIsSelected(true)}>
+                <MobileDesignText>Design</MobileDesignText>
+                <WhiteCircle isSelected={isSelected}/>
+            </MobileDesignButton>
+            <MobileDevButton isSelected={!isSelected} onClick={()=>setIsSelected(false)}>
+                <WhiteCircle/>
+                <MobileDevText>Development</MobileDevText>
+            </MobileDevButton></Buttons>
+                {isSelected? (<MobileDesignSection><MobileDesignImage/>Design
+                    </MobileDesignSection>) :
+                    (<MobileDevSection>Dev<MobileDevImage/></MobileDevSection> )}
+                </MobileDesignDevSection>
         </MidSectionWrapper>
     );
 }
