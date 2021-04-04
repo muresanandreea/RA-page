@@ -83,8 +83,10 @@ export const MobileDesignButton = styled.div`
   border-radius: 25px;
   border:2px solid red;
   background-color: ${props=>props.isSelected? '#B0003A':'#8DA092'};
+  transition: all 0.3s;
   >div{
-    color: ${props=>props.isSelected? '#fff':'#000'}
+    color: ${props=>props.isSelected? '#fff':'#000'};
+    transition: all 0.3s;
   }
 `;
 export const MobileDevButton = styled.div`
@@ -96,8 +98,10 @@ export const MobileDevButton = styled.div`
   border-radius: 25px;
   border:2px solid red;
   background-color: ${props=>props.isSelected? '#B0003A':'#8DA092'} ;
+  transition: all 0.3s;
   >div{
     color: ${props=>props.isSelected? '#fff':'#000'}
+    transition: all 0.3s;
   }
 `;
 
@@ -127,6 +131,7 @@ export const MobileDevImage =styled.div`
   background-size: contain;
   width: 40%;
   height: 40%;
+
 `;
 
 export const MobileDesignImage =styled.div`
@@ -143,4 +148,5 @@ export const WhiteCircle = styled.div`
   background-color: #fff;
   border-radius: 50%;
   border: 6px solid ${props=>props.isSelected? '#8DA092': '#8DA092'};
+  transition: all 0.3s;
 `;

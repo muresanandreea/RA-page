@@ -81,6 +81,7 @@ export const Title = styled.div`
   ${media.mobileAndTablet}{
     font-size: 48px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -96,6 +97,13 @@ export const MobileTitle = styled.div`
     -webkit-text-fill-color: transparent;
     animation-delay: 0s;
     animation: ${shimmerBackground} 8s linear infinite;
+  ${media.mobileAndTablet}{
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 

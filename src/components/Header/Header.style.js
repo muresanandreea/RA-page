@@ -136,6 +136,9 @@ export const LogoWrapper= styled.a`
   transition: all 0.3s ease 0s;
   margin-left: 2%;
   text-decoration: none;
+  ${media.mobileAndTablet}{
+    height: 56%;
+  }
 `;
 
 export const SideMenuButtonWrapper= styled.div`
