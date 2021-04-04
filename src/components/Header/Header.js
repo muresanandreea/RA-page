@@ -1,12 +1,14 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Wrapper,LogoWrapper,SideMenuButtonWrapper,ButtonWrapper,ButtonText,RequestButtonWrapper,
-    HeaderDesktopContent, MobileMenuWrapper} from './Header.style';
+import {Wrapper,LogoWrapper,SideMenuButtonWrapper,ButtonWrapper,ButtonText,RequestButtonWrapper,MobileMenuItemsWrapper,
+    HeaderDesktopContent, MobileMenuWrapper,LinkItem, SideMenuButtonLineOne,SideMenuButtonLineTwo,
+    SideMenuButtonLineThree} from './Header.style';
 import {ContactUsModal} from "../ContactUs/ContactUsModal";
 import {headerLinks} from "./constants";
 
-export const Header = () => {
+export const Header = (props) => {
+    const {isOpen} = props;
     const [contactUsModal, setContactUsModal] = useState(false);
-    const [mobileMenuisOpen, setMobileMenuIsOpen] = useState(false);
+    const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
     return (
         <Wrapper>
             <LogoWrapper href={headerLinks.homepage}/>
@@ -29,12 +31,18 @@ export const Header = () => {
                                     closeModal={()=> setContactUsModal(false)}/>
                     }
                 </HeaderDesktopContent>
-            <SideMenuButtonWrapper  onClick={()=>setMobileMenuIsOpen(!mobileMenuisOpen)}>
-                <i className="fas fa-bars" color={'#acdbdf'}></i>
+            <SideMenuButtonWrapper  isOpen={mobileMenuIsOpen} onClick={()=>setMobileMenuIsOpen(!mobileMenuIsOpen)} >
+                <SideMenuButtonLineOne isOpen={mobileMenuIsOpen}/>
+                <SideMenuButtonLineTwo isOpen={mobileMenuIsOpen}/>
+                <SideMenuButtonLineThree isOpen={mobileMenuIsOpen}/>
             </SideMenuButtonWrapper>
-            {mobileMenuisOpen &&
+            {mobileMenuIsOpen &&
                 <MobileMenuWrapper>
-
+                    <MobileMenuItemsWrapper>
+                        <LinkItem href={headerLinks.services}>Services</LinkItem>
+                        <LinkItem href={headerLinks.portfolio}>Portfolio</LinkItem>
+                        <LinkItem href={headerLinks.aboutUs}>About us</LinkItem>
+                    </MobileMenuItemsWrapper>
                 </MobileMenuWrapper>
             }
         </Wrapper>

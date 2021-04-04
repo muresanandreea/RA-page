@@ -38,6 +38,15 @@ const hover = keyframes`
 }
 `;
 
+const mobileMenuEnter = keyframes`
+0%{
+  bottom: 100%;
+  opacity: 0;
+}
+  100%{bottom: 0;
+  opacity: 1}
+`;
+
 export const Wrapper= styled.div`
   top:0;
   display:flex;
@@ -130,12 +139,20 @@ export const LogoWrapper= styled.a`
 `;
 
 export const SideMenuButtonWrapper= styled.div`
-  width:5rem;
-  font-size: 20px;
+  width:50px;
+  height: 50px;
+  border:1px solid ${props=>(props.isOpen ? '#fff' : '#000')};
+  background-color: ${props=>(props.isOpen ? '#fff' : '#000')};
+  border-radius: 25px;
+  transition: all 0.3s;
+  transform: ${props=>(props.isOpen ? '' : 'scale(0.7)')};
+  position: relative;
+  box-sizing: border-box;
   cursor:pointer;
   display: none;
   ${media.mobileAndTablet}{
     display: flex;
+    z-index: 21;
   }
 `;
 
@@ -210,5 +227,73 @@ export const HeaderDesktopContent = styled.div`
 `;
 
 export const MobileMenuWrapper = styled.div`
-
+    position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 10;
+  animation: ${mobileMenuEnter} 0.2s ease-in forwards;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  ${media.mobileAndTablet}{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
+
+export const MobileMenuItemsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+  justify-content: center;
+  font-size: 18px;
+`;
+
+export const LinkItem = styled.a`
+  text-decoration: none;
+  color: #000;
+`;
+
+export const SideMenuButtonLine = styled.span`
+  width: 20px;
+  height:3px;
+  position:absolute;
+  left:14px;
+  transition: all 0.3s;
+  background-color: ${props=>(props.isOpen ? 'black':'red')};
+  border-radius: 3px;
+  
+`;
+
+export const SideMenuButtonLineThreeBasic = styled.span`
+  width: 12px;
+  height:3px;
+  position:absolute;
+  left:14px;
+  transition: all 0.3s;
+  background-color: ${props=>(props.isOpen ? 'black':'red')};
+  border-radius: 3px;
+  
+`;
+
+export const SideMenuButtonLineOne = styled(SideMenuButtonLine)`
+  top:14px;
+  ${props => props.isOpen ? `transform: rotate(45deg); top:23px`:``}
+`;
+
+export const SideMenuButtonLineTwo = styled(SideMenuButtonLine)`
+  top:23px;
+  ${props => props.isOpen ? `width:0px; left:25px`:``}
+`;
+
+export const SideMenuButtonLineThree = styled(SideMenuButtonLineThreeBasic)`
+  top:33px;
+  ${props => props.isOpen ? `transform: rotate(-45deg);width:20px; top:23px`:``}
+`;
+
