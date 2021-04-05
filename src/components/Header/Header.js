@@ -14,7 +14,7 @@ export const Header = (props) => {
             <LogoWrapper href={headerLinks.homepage}/>
                 <HeaderDesktopContent>
                     <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
-                    <ButtonWrapper href={headerLinks.portfolio}><ButtonText>Portofolio</ButtonText></ButtonWrapper>
+                    <ButtonWrapper href={headerLinks.portfolio}><ButtonText>Portfolio</ButtonText></ButtonWrapper>
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
                     <RequestButtonWrapper>
                     <div className="svg-wrapper" onClick = {()=>setContactUsModal(!contactUsModal)}>

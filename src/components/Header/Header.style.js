@@ -137,7 +137,7 @@ export const LogoWrapper= styled.a`
   margin-left: 2%;
   text-decoration: none;
   ${media.mobileAndTablet}{
-    height: 56%;
+    height: 40%;
   }
 `;
 
