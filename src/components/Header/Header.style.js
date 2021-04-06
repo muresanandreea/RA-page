@@ -47,10 +47,12 @@ const mobileMenuEnter = keyframes`
   opacity: 1}
 `;
 
+export const TextWrapper = styled.div``;
+
 export const Wrapper= styled.div`
   top:0;
   display:flex;
-  width: 100vw;
+  width: 100%;
   height:7rem;
   background-color:#171616;
   box-shadow: rgb(0 0 0 /37%) 0px 0px 9px 0px;
@@ -108,7 +110,6 @@ export const Wrapper= styled.div`
       Pushing the text up into the SVG. Without this the
       text would be below the div's.
   */
-
   #text {
     margin-top: -35px;
     text-align: center;

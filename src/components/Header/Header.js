@@ -19,11 +19,8 @@ export const Header = (props) => {
                     <RequestButtonWrapper>
                     <div className="svg-wrapper" onClick = {()=>setContactUsModal(!contactUsModal)}>
                         <svg height="40" width="174" xmlns="http://www.w3.org/2000/svg">
-                            <g>
                                 <rect id="shape" height="40" width="174"/>
-                                <text x="12" y="24" fill="#06D6A0" cursor="pointer"> Request for quotation </text>
-                            </g>
-
+                                <text x="12" y="24" fill="#06D6A0" cursor="pointer" pointerEvents="none"> Request for quotation </text>
                         </svg>
                     </div></RequestButtonWrapper>
                     {contactUsModal &&

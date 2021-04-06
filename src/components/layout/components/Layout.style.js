@@ -11,5 +11,5 @@ export const BaseWrapper = styled.div`
 export const ContentWrapper = styled.div`
   display: flex;
   margin-top:112px;
-width: 100vw;
+  width: 100%;
 `;
