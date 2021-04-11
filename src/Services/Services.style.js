@@ -23,8 +23,8 @@ export const ServicesWrapper = styled.div`
 export const ServicesTableWrapper = styled.div`
   display:flex;
   flex-direction: column;
-  color:#E1E0DF;
-  width: 80vw;
+  color:red;
+  width: 100%;
   align-items: center;
   padding: 20px;
   margin-bottom: 191px;
@@ -44,14 +44,9 @@ export const SocialMediaTitle = styled.div``;
 export const PrintTitle = styled.div``;
 
 export const Row = styled.div`
-  border:1px solid #ECC091;
-  color:#402E32;
   display: flex;
   padding-left: 8px;
-  :nth-child(even) {
-    background-color: #eee;
-  }
-`;
+  color:#000;`
 
 export const WebsteSectionCotentWrapper = styled.div`
     margin: 4px 0 4px 0;
@@ -63,9 +58,9 @@ export const PrintcontentWrapper = styled.div`
 
 export const TableTitle = styled.div`
   height:40px;
-  width:50vw;
+  width:100%;
   top:112px;
-  background-color:#402E32;
+  background-color:#000;
   position: sticky;
   display:flex;
   align-items: center;
@@ -91,7 +86,7 @@ export const SocialMediacontentWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-    width: 80vw;
+    width: 100%;
     font-size: 72px;
     background: linear-gradient(
             45deg

@@ -24,7 +24,6 @@ const shimmerBackground = keyframes`
 export const PortfolioWrapper = styled.div`
   width: 100%;
   height:100%;
-  background-color: #ECE8E4;
   display: flex;
 `;
 
@@ -108,7 +107,6 @@ export const MobileTitle = styled.div`
 
 
 export const OurPortfolio = styled.div`
-  background: linear-gradient(to bottom, #171616 0%, #ece8e4 100%);
   height:4%;
   min-height:240px;
   width:100%;

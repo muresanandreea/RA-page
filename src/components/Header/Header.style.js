@@ -75,7 +75,7 @@ export const Wrapper= styled.div`
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 174px;
+    width: 228px;
     /*make sure to use same height/width as in the html*/
     height: 40px;
     border-radius: 3px;
@@ -93,14 +93,14 @@ export const Wrapper= styled.div`
   #shape {
     stroke-width: 3px;
     fill: transparent;
-    stroke: #7DA487;
-    stroke-dasharray: 160 400;
-    stroke-dashoffset: -220;
+    stroke: #06D6A0;
+    stroke-dasharray: 228 400;
+    stroke-dashoffset: -272;
     transition: 1s all ease;
     padding:0;
     margin:0;
     :hover{
-      stroke-dasharray: 50 0;
+      stroke-dasharray: 40 0;
       stroke-width: 3px;
       stroke-dashoffset: 0;
       stroke: #06D6A0;
@@ -110,22 +110,16 @@ export const Wrapper= styled.div`
       Pushing the text up into the SVG. Without this the
       text would be below the div's.
   */
-  #text {
+  .text {
     margin-top: -35px;
+    font-family:'Open Sans', sans-serif;
+    letter-spacing: 0.15em;
     text-align: center;
     padding:0;
     color:#06D6A0;
     margin:0;
   }
-
-  #text a {
-    color: white;
-    text-decoration: none;
-    font-weight: 100;
-    font-size: 1.1em;
-    padding:0;
-    margin:0;
-  }
+  
 `;
 
 export const LogoWrapper= styled.a`
@@ -145,15 +139,13 @@ export const LogoWrapper= styled.a`
 export const SideMenuButtonWrapper= styled.div`
   width:50px;
   height: 50px;
-  border:1px solid ${props=>(props.isOpen ? '#fff' : '#000')};
-  background-color: ${props=>(props.isOpen ? '#fff' : '#000')};
-  border-radius: 25px;
   transition: all 0.3s;
   transform: ${props=>(props.isOpen ? '' : 'scale(0.7)')};
   position: relative;
   box-sizing: border-box;
   cursor:pointer;
   display: none;
+  margin-right: 4%;
   ${media.mobileAndTablet}{
     display: flex;
     z-index: 21;
@@ -179,19 +171,12 @@ export const RequestButtonWrapper = styled.div`
   margin-left:4rem;
 `;
 
-export const RequestButtonText = styled.div`
-  font-size: 18px;
-  padding: 16px;
-  color: #ECC091;
-  font-family: Helvetica-Regular;
-  text-transform: uppercase;
-`;
 
 export const ButtonText = styled.div`
-  font-size: 18px;
-  padding: 16px;
-  color: #ECC091;
-  font-family: Helvetica-Regular;
+  font-size: 16px;
+  color: #E6E7E8;
+  font-family:'Open Sans-Bold', sans-serif;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   display:flex;
   align-items:center;
@@ -201,22 +186,27 @@ export const ButtonText = styled.div`
   text-align: center;
   margin:0 10px;
   z-index: 1;
-  :before {
-    content: "";
-    position: absolute;
-    top: 76px;
-    height: 1px;
-    width:10%;
-    background: #8DA092;
-    visibility: hidden;
-    border-radius: 5px;
-    transform: scaleX(0);
-    transition: .25s linear;
-  }
-  :hover:before,
-  :focus:before {
-    visibility: visible;
-    transform: scaleX(1);
+  :hover{    color:#06D6A0; transition: 0.2s ease-in-out all}
+  display: inline-block;
+  padding: 16px 20px;
+  position: relative;
+}
+:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #06D6A0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+:hover:after {
+  width: 100%;
+  left: 0;
+}
 `;
 
 export const SideMenuWrapper = styled.div``;
@@ -263,33 +253,34 @@ export const LinkItem = styled.a`
   text-decoration: none;
   color: #000;
   padding-top: 20px;
+  font-family:'Open Sans', sans-serif;
+  letter-spacing: 0.15em;
 `;
 
 export const SideMenuButtonLine = styled.span`
-  width: 20px;
+  width: 38px;
   height:3px;
   position:absolute;
   left:14px;
   transition: all 0.3s;
-  background-color: ${props=>(props.isOpen ? 'black':'red')};
+  background-color: ${props=>(props.isOpen ? '#000':'#06D6A0')};
   border-radius: 3px;
-  
 `;
 
 export const SideMenuButtonLineThreeBasic = styled.span`
-  width: 12px;
+  width: 24px;
   height:3px;
   position:absolute;
   left:14px;
   transition: all 0.3s;
-  background-color: ${props=>(props.isOpen ? 'black':'red')};
+  background-color: ${props=>(props.isOpen ? '#000':'#06D6A0')};
   border-radius: 3px;
   
 `;
 
 export const SideMenuButtonLineOne = styled(SideMenuButtonLine)`
   top:14px;
-  ${props => props.isOpen ? `transform: rotate(45deg); top:23px`:``}
+  ${props => props.isOpen ? `transform: rotate(45deg); width:32px; top:23px`:``}
 `;
 
 export const SideMenuButtonLineTwo = styled(SideMenuButtonLine)`
@@ -299,6 +290,6 @@ export const SideMenuButtonLineTwo = styled(SideMenuButtonLine)`
 
 export const SideMenuButtonLineThree = styled(SideMenuButtonLineThreeBasic)`
   top:33px;
-  ${props => props.isOpen ? `transform: rotate(-45deg);width:20px; top:23px`:``}
+  ${props => props.isOpen ? `transform: rotate(-45deg);width:32px; top:23px`:``}
 `;
 

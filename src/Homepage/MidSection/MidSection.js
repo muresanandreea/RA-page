@@ -31,12 +31,12 @@ export const MidSection = () => {
             <MobileDesignDevSection>
                 <Buttons>
             <MobileDesignButton isSelected={isSelected} onClick={()=>setIsSelected(true)}>
-                <MobileDesignText>Design</MobileDesignText>
+                <MobileDesignText isSelected={isSelected}>Design</MobileDesignText>
                 <WhiteCircle isSelected={isSelected}/>
             </MobileDesignButton>
             <MobileDevButton isSelected={!isSelected} onClick={()=>setIsSelected(false)}>
                 <WhiteCircle/>
-                <MobileDevText>Development</MobileDevText>
+                <MobileDevText isSelected={!isSelected}>Development</MobileDevText>
             </MobileDevButton></Buttons>
                 {isSelected? (<MobileDesignSection><MobileDesignImage/>Design
                     </MobileDesignSection>) :

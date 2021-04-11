@@ -2,14 +2,6 @@ import React, {useState} from "react";
 import {PortfolioWrapper,ImagesWrapper, PortfolioAssetsWrapper,TitleWrapper,Title,
     OurPortfolio, OurPortfolioTitle, Wrapper, PortfolioDivider,MobileTitle,WidgetWrapper,
     PortofolioPageWrapper} from './Portofolio.style';
-import {
-    ButtonText, ButtonWrapper,
-    ButtonWrapperCurrent,
-    Divider,
-    SideMenuSections,
-    SideMenuWrapper
-} from "../components/utils/stickySideMenu/StickySideMenu.style";
-import {headerLinks} from "../components/Header/constants";
 import {portfolioWeb,portfolioLogo,portfolioMobile} from './portfolioImages';
 import {ContactUsWidget} from "../components/utils/contactUsWidget/ContactUsWidget";
 
@@ -34,15 +26,6 @@ export const Portfolio = ({onClose,closeModal}) => {
                 <OurPortfolioTitle>Our <b>Portfolio</b></OurPortfolioTitle>
             </OurPortfolio>
         <PortfolioWrapper>
-                <SideMenuWrapper>
-                    <Divider/>
-                    <SideMenuSections>
-                        <ButtonWrapper href={headerLinks.services}><ButtonText>Services</ButtonText></ButtonWrapper>
-                        <ButtonWrapperCurrent href={headerLinks.portfolio}><ButtonText>Portfolio</ButtonText></ButtonWrapperCurrent>
-                        <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
-                        <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>Contact us</ButtonText></ButtonWrapper>
-                    </SideMenuSections>
-                </SideMenuWrapper>
             <PortfolioAssetsWrapper>
                 <TitleWrapper>
                     <Title>Our <b>Websites</b></Title>

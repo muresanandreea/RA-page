@@ -1,8 +1,7 @@
 import styled,{keyframes} from 'styled-components';
-import LogoImage from '../../assets/stormTrooper.jpg';
-import WebImage from '../../assets/bobaFett.jpg';
-import MobileImage from '../../assets/anotherStormTrooper.jpg';
-import ArrowLeft from '../../assets/arrowRight.svg';
+import LogoImage from '../../assets/portfolio/logo/signboard_coffeeShop.jpg';
+import WebImage from '../../assets/portfolio/web/LandingPage_CakeFactory.jpg';
+import MobileImage from '../../assets/portfolio/mobile/360px_mobile.jpg';
 import {media} from "../../components/utils/stylesVariables";
 
 const seeMoreAnimation = keyframes`
@@ -33,7 +32,6 @@ export const PortofolioSectionWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color:#ECE8E4;
   padding: 20px 0 80px 0;
   ${media.mobileAndTablet}{
     display: none
@@ -43,7 +41,7 @@ export const PortofolioSectionWrapper = styled.div`
 export const PortofolioSectionTitle = styled.div`
   color:#402E32;
   font-size:80px;
-  font-family: Arvo-Regular;
+  font-family:'Open Sans', sans-serif;
   cursor:default;
 `;
 
@@ -58,15 +56,17 @@ export const PortofolioBoxesWrapper = styled.div`
 export const PortofolioLogoBox = styled.div`
     width: 359px;
     height:359px;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background: #fff;
     cursor:pointer;
-    justify-content: center;
-    align-items: center;
+  position: relative;
   padding: 20px;
   transition: all 0.2s;
+  :hover .middle {
+    opacity: 1;
+  };
+  :hover .image {
+    filter: grayscale(80%);
+    opacity: 0.3;
+  };
   :hover{
     transform: translate(0,-8px);
     box-shadow:#8DA092 0px 0px 9px 0px;
@@ -80,23 +80,29 @@ export const PortofolioLogoDescription = styled.div`
 export const PortofolioLogoImage = styled.div`
   background-image:url(${LogoImage});
   background-repeat: no-repeat;
-  height: 184px;
-  width: 104px;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
   background-size: contain;
 `;
 
 export const PortofolioWebBox = styled.div`
   width: 359px;
   height:359px;
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background: #fff;
   cursor:pointer;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   padding: 20px;
   transition: all 0.2s;
+  :hover .middle {
+    opacity: 1;
+  };
+  :hover .image {
+    filter: grayscale(80%);
+    opacity: 0.3;
+  };
   :hover{
     transform: translate(0,-8px);
     box-shadow:#8DA092 0px 0px 9px 0px;
@@ -110,23 +116,29 @@ export const PortofolioWebDescription = styled.div`
 export const PortofolioWebImage = styled.div`
   background-image:url(${WebImage});
   background-repeat: no-repeat;
-  height: 184px;
-  width: 104px;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
   background-size: contain;
 `;
 
 export const PortofolioMobileBox = styled.div`
   width: 359px;
   height:359px;
-  display:flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background: #fff;
   cursor:pointer;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   padding: 20px;
   transition: all 0.2s;
+  :hover .middle {
+    opacity: 1;
+  };
+  :hover .image {
+    filter: grayscale(80%);
+    opacity: 0.3;
+  };
   :hover{
     transform: translate(0,-8px);
     box-shadow:#8DA092 0px 0px 9px 0px;
@@ -140,8 +152,12 @@ export const PortofolioMobileDescription = styled.div`
 export const PortofolioMobileImage = styled.div`
   background-image:url(${MobileImage});
   background-repeat: no-repeat;
-  height: 146px;
-  width: 104px;
+  height: 100%;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
   background-size: contain;
 `;
 
@@ -172,11 +188,21 @@ export const Icon = styled.div`
 `;
 
 export const SeeMoreText = styled.div`
-  font-family: Helvetica-Bold;
+  font-family: 'Open Sans';
   height: 100%;
   font-size:16px;
-  font-weight: 700;
   color:#171616;
   display: flex;
   align-items: center;
+`;
+
+export const BoxContent = styled.div`
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 `;

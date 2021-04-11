@@ -77,16 +77,16 @@ export const Divider = styled.div`
 `;
 
 export const CopyrightText = styled.div`
-  color:#ECC091;
-  font-family:Arial-Regular;
+  color:#E6E7E8;
+  font-family:'Open Sans', sans-serif;
   font-size:16px;
   cursor:default;
   margin-bottom: 8px;
 `;
 
 export const PrivacyPolicyText = styled.div`
-  color:#ECC091;
-  font-family:Arial-Regular;
+  color:#E6E7E8;
+  font-family:'Open Sans', sans-serif;
   font-size:16px;
   cursor:pointer;
   margin-bottom: 40px;

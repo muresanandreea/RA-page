@@ -3,7 +3,7 @@ import {PortofolioSectionWrapper, PortofolioSectionTitle, PortofolioBoxesWrapper
     PortofolioLogoBox,PortofolioLogoDescription,PortofolioLogoImage,
     PortofolioWebBox,PortofolioWebDescription,PortofolioWebImage,
     PortofolioMobileBox,PortofolioMobileDescription,PortofolioMobileImage, SeeMoreButton,Icon,
-    SeeMoreText} from './PortofolioSection.style';
+    SeeMoreText, BoxContent} from './PortofolioSection.style';
 
 export const PortofolioSection = (props) => {
     const {text}=props;
@@ -13,18 +13,20 @@ export const PortofolioSection = (props) => {
             <PortofolioSectionTitle>Our <b>Services</b></PortofolioSectionTitle>
             <PortofolioBoxesWrapper>
             <PortofolioLogoBox>
-                <PortofolioLogoImage/>
-                <PortofolioLogoDescription>Bacon ipsum dolor amet drumstick shoulder meatball jowl jerky cupim bresaola shank chislic. Prosciutto pork loin drumstick, turducken ball tip hamburger bacon cow filet mignon porchetta short ribs frankfurter ground round.
+                    <PortofolioLogoImage className="image"/>
+                <BoxContent className="middle">
+                <PortofolioLogoDescription className="exclude">Bacon ipsum dolor amet drumstick shoulder meatball jowl jerky cupim bresaola shank chislic. Prosciutto pork loin drumstick, turducken ball tip hamburger bacon cow filet mignon porchetta short ribs frankfurter ground round.
                 </PortofolioLogoDescription>
-                <SeeMoreButton>
+                <SeeMoreButton className="exclude">
                     <SeeMoreText>See More
                         <Icon>
                             <i className="fas fa-chevron-right"/>
                         </Icon></SeeMoreText>
-                </SeeMoreButton>
+                </SeeMoreButton></BoxContent>
             </PortofolioLogoBox>
                 <PortofolioWebBox>
-                    <PortofolioWebImage/>
+                        <PortofolioWebImage className="image"/>
+                    <BoxContent className="middle">
                     <PortofolioWebDescription>Chislic kielbasa fatback ham hock pastrami drumstick frankfurter. Flank pork loin drumstick short loin salami meatloaf. Venison frankfurter ball tip meatball tri-tip, tenderloin tail buffalo pork jowl pork loin biltong ground round. Tail meatball kielbasa shankle.
                     </PortofolioWebDescription>
                     <SeeMoreButton>
@@ -32,10 +34,11 @@ export const PortofolioSection = (props) => {
                             <Icon>
                                 <i className="fas fa-chevron-right"/>
                             </Icon></SeeMoreText>
-                    </SeeMoreButton>
+                    </SeeMoreButton></BoxContent>
                 </PortofolioWebBox>
                 <PortofolioMobileBox>
-                    <PortofolioMobileImage/>
+                        <PortofolioMobileImage className="image"/>
+                        <BoxContent className="middle">
                     <PortofolioMobileDescription>Pastrami doner filet mignon, sausage tail cow biltong ribeye kevin pancetta venison beef brisket cupim. Corned beef salami hamburger turkey, beef pork chop kevin strip steak ham hock beef ribs cupim cow tenderloin biltong.
                     </PortofolioMobileDescription>
                     <SeeMoreButton>
@@ -43,7 +46,7 @@ export const PortofolioSection = (props) => {
                             <Icon>
                                 <i className="fas fa-chevron-right"/>
                             </Icon></SeeMoreText>
-                    </SeeMoreButton>
+                    </SeeMoreButton></BoxContent>
                 </PortofolioMobileBox>
             </PortofolioBoxesWrapper>
 

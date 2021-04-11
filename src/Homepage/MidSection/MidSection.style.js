@@ -9,7 +9,6 @@ export const MidSectionWrapper = styled.div`
   justify-content: space-evenly;
   width: 100%;
   height: 40vh;
-  background-color:#ECE8E4;
   padding: 50px 0;
 `;
 
@@ -48,7 +47,7 @@ export const DevImage = styled.div`
 export const SectionText = styled.div`
   padding:20px;
   color:darkgreen;
-  font-family: Arvo-Regular;
+  font-family:'Open Sans', sans-serif;
   font-size:20px;
 `;
 
@@ -79,13 +78,12 @@ export const MobileDesignButton = styled.div`
   justify-content: space-around;
   align-items: center;
   width: 42vw;
-  height: 70%;
-  border-radius: 25px;
-  border:2px solid red;
-  background-color: ${props=>props.isSelected? '#B0003A':'#8DA092'};
+  height: 72%;
+  border-radius: 3px;
+  background-color: ${props=>props.isSelected? '#000':'#06D6A0'};
   transition: all 0.3s;
   >div{
-    color: ${props=>props.isSelected? '#fff':'#000'};
+    color: ${props=>props.isSelected? '#e6e7e8':'#000'};
     transition: all 0.3s;
   }
 `;
@@ -94,27 +92,28 @@ export const MobileDevButton = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 42vw;
-  height: 70%;
-  border-radius: 25px;
-  border:2px solid red;
-  background-color: ${props=>props.isSelected? '#B0003A':'#8DA092'} ;
+  height: 72%;
+  border-radius: 3px;
+  background-color: ${props=>props.isSelected? '#000':'#06D6A0'} ;
   transition: all 0.3s;
   >div{
-    color: ${props=>props.isSelected? '#fff':'#000'}
+    color: ${props=>props.isSelected? '#e6e7e8':'#000'};
     transition: all 0.3s;
   }
 `;
 
 export const MobileDesignText = styled.div`
   font-size:18px;
-  font-family: Arvo-Regular,serif;
+  font-family:'Open Sans', sans-serif;
   margin-right: 36px;
+  //font-weight: ${props=>props.isSelected ? '700':'400'};
 `;
 
 export const MobileDevText = styled.div`
   font-size:18px;
-  font-family: Arvo-Regular,serif;
-
+  font-family:'Open Sans', sans-serif;
+  //font-weight: ${props=>props.isSelected ? '700':'400'};
+  //padding-left:4px;
 `;
 
 export const Buttons = styled.div`
@@ -145,8 +144,8 @@ export const MobileDesignImage =styled.div`
 export const WhiteCircle = styled.div`
     width: 12px;
     height: 12px;
-  background-color: #fff;
+  background-color: #e6e7e8;
   border-radius: 50%;
-  border: 6px solid ${props=>props.isSelected? '#8DA092': '#8DA092'};
+  border: 6px solid #06D6A0;
   transition: all 0.3s;
 `;
