@@ -18,8 +18,8 @@ export const Header = (props) => {
                     <ButtonWrapper href={headerLinks.aboutUs}><ButtonText>About us</ButtonText></ButtonWrapper>
                     <RequestButtonWrapper>
                     <div className="svg-wrapper" onClick = {()=>setContactUsModal(!contactUsModal)}>
-                        <svg height="40" width="268" xmlns="http://www.w3.org/2000/svg">
-                                <rect id="shape" height="40" width="268"/>
+                        <svg height="40" width="272" xmlns="http://www.w3.org/2000/svg">
+                                <rect id="shape" height="40" width="272"/>
                                 <text  className="text" x="12" y="24" fill="#06D6A0" cursor="pointer" pointerEvents="none"> Request for quotation </text>
                         </svg>
                     </div></RequestButtonWrapper>

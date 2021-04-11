@@ -54,12 +54,14 @@ export const PortofolioBoxesWrapper = styled.div`
 `;
 
 export const PortofolioLogoBox = styled.div`
-    width: 359px;
+  width: 28%;
     height:359px;
     cursor:pointer;
   position: relative;
-  padding: 20px;
   transition: all 0.2s;
+  border-radius: 3px;
+  border: 1px solid rgb(218, 234, 249);
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 20px;
   :hover .middle {
     opacity: 1;
   };
@@ -90,12 +92,14 @@ export const PortofolioLogoImage = styled.div`
 `;
 
 export const PortofolioWebBox = styled.div`
-  width: 359px;
+  width: 28%;
   height:359px;
   cursor:pointer;
   position: relative;
-  padding: 20px;
   transition: all 0.2s;
+  border-radius: 3px;
+  border: 1px solid rgb(218, 234, 249);
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 20px;
   :hover .middle {
     opacity: 1;
   };
@@ -126,12 +130,14 @@ export const PortofolioWebImage = styled.div`
 `;
 
 export const PortofolioMobileBox = styled.div`
-  width: 359px;
+  width: 28%;
   height:359px;
   cursor:pointer;
   position: relative;
-  padding: 20px;
   transition: all 0.2s;
+  border-radius: 3px;
+  border: 1px solid rgb(218, 234, 249);
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 20px;
   :hover .middle {
     opacity: 1;
   };

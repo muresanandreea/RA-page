@@ -75,7 +75,7 @@ export const Wrapper= styled.div`
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 268px;
+    width: 272px;
     /*make sure to use same height/width as in the html*/
     height: 40px;
     border-radius: 3px;
@@ -94,8 +94,8 @@ export const Wrapper= styled.div`
     stroke-width: 3px;
     fill: transparent;
     stroke: #06D6A0;
-    stroke-dasharray: 252 400;
-    stroke-dashoffset: -312;
+    stroke-dasharray: 254 400;
+    stroke-dashoffset: -320;
     transition: 1s all ease;
     padding:0;
     margin:0;
