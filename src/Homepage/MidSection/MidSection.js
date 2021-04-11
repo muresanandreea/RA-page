@@ -19,7 +19,6 @@ export const MidSection = () => {
                 </div>
             </DesignSection>
             <DevSection>
-                <DevImage/>
                 <div>
 
                     <SectionText>
@@ -27,6 +26,7 @@ export const MidSection = () => {
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </SectionText>
                 </div>
+                <DevImage/>
             </DevSection>
             <MobileDesignDevSection>
                 <Buttons>

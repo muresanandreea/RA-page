@@ -75,7 +75,7 @@ export const Wrapper= styled.div`
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: 228px;
+    width: 268px;
     /*make sure to use same height/width as in the html*/
     height: 40px;
     border-radius: 3px;
@@ -94,8 +94,8 @@ export const Wrapper= styled.div`
     stroke-width: 3px;
     fill: transparent;
     stroke: #06D6A0;
-    stroke-dasharray: 228 400;
-    stroke-dashoffset: -272;
+    stroke-dasharray: 252 400;
+    stroke-dashoffset: -312;
     transition: 1s all ease;
     padding:0;
     margin:0;
@@ -115,6 +115,7 @@ export const Wrapper= styled.div`
     font-family:'Open Sans', sans-serif;
     letter-spacing: 0.15em;
     text-align: center;
+    text-transform: uppercase;
     padding:0;
     color:#06D6A0;
     margin:0;
