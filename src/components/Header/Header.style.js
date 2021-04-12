@@ -47,14 +47,12 @@ const mobileMenuEnter = keyframes`
   opacity: 1}
 `;
 
-export const TextWrapper = styled.div``;
-
 export const Wrapper= styled.div`
   top:0;
   display:flex;
   width: 100%;
   height:7rem;
-  background-color:#171616;
+  background-color:#000;
   box-shadow: rgb(0 0 0 /37%) 0px 0px 9px 0px;
   align-items: center;
   position:fixed;
@@ -95,7 +93,7 @@ export const Wrapper= styled.div`
     fill: transparent;
     stroke: #06D6A0;
     stroke-dasharray: 254 400;
-    stroke-dashoffset: -320;
+    stroke-dashoffset: -321;
     transition: 1s all ease;
     padding:0;
     margin:0;
@@ -189,7 +187,7 @@ export const ButtonText = styled.div`
   z-index: 1;
   :hover{    color:#06D6A0; transition: 0.2s ease-in-out all}
   display: inline-block;
-  padding: 16px 20px;
+  padding: 16px 2px;
   position: relative;
 }
 :after {

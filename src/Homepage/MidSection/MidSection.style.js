@@ -8,8 +8,8 @@ export const MidSectionWrapper = styled.div`
   display:flex;
   justify-content: space-evenly;
   width: 100%;
-  height: 40vh;
-  padding: 50px 0;
+  height: 28vh;
+  padding: 52px 0 0 0;
 `;
 
 export const DesignSection = styled.div`
@@ -46,9 +46,9 @@ export const DevImage = styled.div`
 
 export const SectionText = styled.div`
   padding:20px;
-  color:darkgreen;
+  color:#000;
   font-family:'Open Sans', sans-serif;
-  font-size:20px;
+  font-size:16px;
 `;
 
 export const MobileDevSection = styled.div`
@@ -148,4 +148,9 @@ export const WhiteCircle = styled.div`
   border-radius: 50%;
   border: 6px solid #06D6A0;
   transition: all 0.3s;
+`;
+
+export const SectionTitle = styled.div`
+  font-size: 28px;
+  font-weight: 700;
 `;

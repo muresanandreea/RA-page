@@ -22,8 +22,6 @@ const shimmerBackground = keyframes`
 `;
 
 export const PortfolioWrapper = styled.div`
-  width: 100%;
-  height:100%;
   display: flex;
 `;
 
@@ -131,6 +129,8 @@ export const Wrapper = styled.div`
     display: flex;
   flex-direction: column;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   ${media.mobileAndTablet}{
     width: 100vw;
   }
@@ -149,9 +149,8 @@ export const PortofolioPageWrapper = styled.div`
 `;
 
 export const WidgetWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 8vw;
+  position: sticky;
+  top:200px;
   ${media.mobileAndTablet}{
     width: auto;
   }

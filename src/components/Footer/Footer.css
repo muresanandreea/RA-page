@@ -9,6 +9,7 @@
     list-style: none;
     display: flex;
     padding: 0;
+    z-index: 1;
 }
 
 /* Style the list items inside the UL list, by setting its width, height and line-height
@@ -24,8 +25,12 @@
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
-    border: 5px solid #D8E2DC;
+    border: 5px solid #06D6A0;
     transition: all 0.5s ease;
+}
+.wrapper a{
+    color: #06D6A0;
+
 }
 
 /* Style the icons by setting its color and margin-top value to 20px
@@ -45,7 +50,7 @@ to align it properly */
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover .fa-facebook {
+.wrapper ul li:hover .fa-facebook-f {
     color: #3b5998;
     text-shadow: 0 0 15px #3b5998;
     transition: all 0.5s ease;
