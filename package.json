@@ -23,7 +23,7 @@
     "react-scripts": "4.0.2",
     "styled-components": "^5.2.1",
     "web-vitals": "^1.1.0",
-    "webpack": "^5.31.2"
+    "webpack": "^4.44.2"
   },
   "scripts": {
     "start": "react-scripts start",
