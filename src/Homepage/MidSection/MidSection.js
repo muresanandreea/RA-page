@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {MidSectionWrapper,DesignSection,DesignImage,SectionText,
     DevSection,DevImage, MobileDesignSection, MobileDevSection, MobileDesignDevSection,
     MobileDesignButton, MobileDevButton, MobileDesignText, MobileDevText, Buttons, MobileDesignImage,
-    MobileDevImage, WhiteCircle,SectionTitle} from './MidSection.style';
+    MobileDevImage, WhiteCircle} from './MidSection.style';
 
 export const MidSection = () => {
     const [isSelected, setIsSelected] = useState(true);
@@ -13,7 +13,7 @@ export const MidSection = () => {
                 <DesignImage/>
                 <div>
                     <SectionText>
-                        <SectionTitle>Design</SectionTitle>
+                        <h3>Design</h3>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </SectionText>
                 </div>
@@ -22,7 +22,7 @@ export const MidSection = () => {
                 <div>
 
                     <SectionText>
-                        <SectionTitle>Development</SectionTitle>
+                        <h3>Development</h3>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </SectionText>
                 </div>

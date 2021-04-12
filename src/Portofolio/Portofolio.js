@@ -22,28 +22,36 @@ export const Portfolio = ({onClose,closeModal}) => {
 
     return (
         <Wrapper>
+            <OurPortfolio>
+                <OurPortfolioTitle>Our <b>Portfolio</b></OurPortfolioTitle>
+            </OurPortfolio>
+        <PortfolioWrapper>
             <PortfolioAssetsWrapper>
                 <TitleWrapper>
-                    <Title>Websites</Title>
+                    <Title>Our <b>Websites</b></Title>
                 </TitleWrapper>
                 <ImagesWrapper>
                     {imagesWeb}
                 </ImagesWrapper>
                 <PortfolioDivider/>
                 <TitleWrapper>
-                <Title>Logos</Title>
+                <Title>Our <b>Logos</b></Title>
                 </TitleWrapper>
                 <ImagesWrapper>
                     {imagesLogo}
                 </ImagesWrapper>
                 <PortfolioDivider/>
                 <TitleWrapper>
-                <MobileTitle>Mobile responsive</MobileTitle>
+                <MobileTitle><b>Mobile</b> responsive</MobileTitle>
                 </TitleWrapper>
                 <ImagesWrapper>
                     {imagesMobile}
                 </ImagesWrapper>
             </PortfolioAssetsWrapper>
+            <WidgetWrapper>
+                <ContactUsWidget onClose={onClose}/>
+            </WidgetWrapper>
+        </PortfolioWrapper>
         </Wrapper>
     )
 }

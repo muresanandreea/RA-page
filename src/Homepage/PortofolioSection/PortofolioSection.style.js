@@ -32,17 +32,16 @@ export const PortofolioSectionWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: 52px 0 80px 0;
+  padding: 20px 0 80px 0;
   ${media.mobileAndTablet}{
     display: none
   }
 `;
 
 export const PortofolioSectionTitle = styled.div`
-  color:#000;
+  color:#402E32;
   font-size:80px;
   font-family:'Open Sans', sans-serif;
-  font-weight: 700;
   cursor:default;
 `;
 
@@ -50,7 +49,7 @@ export const PortofolioBoxesWrapper = styled.div`
   display:flex;
   width: 100%;
   justify-content: space-evenly;
-  margin: 48px 0 0 0 ;
+  margin: 64px 0 0 0 ;
   padding-bottom: 28px;
 `;
 
@@ -74,6 +73,10 @@ export const PortofolioLogoBox = styled.div`
     transform: translate(0,-8px);
     box-shadow:#8DA092 0px 0px 9px 0px;
   }
+`;
+
+export const PortofolioLogoDescription = styled.div`
+
 `;
 
 export const PortofolioLogoImage = styled.div`
@@ -110,9 +113,8 @@ export const PortofolioWebBox = styled.div`
   }
 `;
 
-export const PortofolioDescription = styled.div`
-  font-family:'Open Sans', sans-serif;
-  font-size: 16px;
+export const PortofolioWebDescription = styled.div`
+
 `;
 
 export const PortofolioWebImage = styled.div`
@@ -147,6 +149,10 @@ export const PortofolioMobileBox = styled.div`
     transform: translate(0,-8px);
     box-shadow:#8DA092 0px 0px 9px 0px;
   }
+`;
+
+export const PortofolioMobileDescription = styled.div`
+
 `;
 
 export const PortofolioMobileImage = styled.div`

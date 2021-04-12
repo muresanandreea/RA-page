@@ -6,6 +6,7 @@ export const Footer = () => {
 
     return (
         <FooterWrapper>
+            <Divider/>
             <ContentWrapper>
                 <IconsWrapper>
                     <div className="wrapper">

@@ -10,15 +10,14 @@ export const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
+  position: sticky;
   top: 88%;
-  z-index: 500;
   .fa-comment-dots{
     color:#ECE8E4;
     font-size:28px;
   };
   :hover {
-    background-color: #000;
+    box-shadow: 0 0 4px 0 rgb(22 45 61 / 25%);
     cursor:pointer;
   };
 `;
